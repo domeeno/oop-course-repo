@@ -28,5 +28,5 @@ fun main() {
   File("src/main/resources/output/starwars.json").writeText(objectMapper.writeValueAsString(starWars))
   File("src/main/resources/output/hitchhiker.json").writeText(objectMapper.writeValueAsString(hitchHiker))
   File("src/main/resources/output/rings.json").writeText(objectMapper.writeValueAsString(rings))
-  File("src/main/resources/output/marvel").writeText(objectMapper.writeValueAsString(starWars))
+  File("src/main/resources/output/marvel.json").writeText(objectMapper.writeValueAsString(starWars))
 }
