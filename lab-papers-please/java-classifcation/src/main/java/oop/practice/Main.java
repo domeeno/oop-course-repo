@@ -20,30 +20,31 @@ public class Main {
     Universe marvel = new Universe("marvel", new ArrayList<>());
     Universe rings = new Universe("rings", new ArrayList<>());
 
+    Scanner scanner = new Scanner(System.in);
+
     for (JsonNode entry : data) {
       String entryAsString = entry.toString();
       System.out.println(entryAsString);
-      Scanner scanner = new Scanner(System.in);
       String userInput = scanner.nextLine();
       switch (userInput) {
         case "1":
-          starWars.individuals().add(entryAsString);
+          starWars.individuals().add(entry);
           break;
         case "2":
-          hitchhikers.individuals().add(entryAsString);
+          hitchhikers.individuals().add(entry);
           break;
         case "3":
-          marvel.individuals().add(entryAsString);
+          marvel.individuals().add(entry);
           break;
         case "4":
-          rings.individuals().add(entryAsString);
+          rings.individuals().add(entry);
           break;
         default:
           System.out.println("Invalid input");
       }
-      scanner.close();
     }
 
+    scanner.close();
     mapper.writeValue(new File("src/main/resources/output/starwars.json"), starWars);
     mapper.writeValue(new File("src/main/resources/output/hitchhiker.json"), hitchhikers);
     mapper.writeValue(new File("src/main/resources/output/rings.json"), rings);
@@ -53,5 +54,5 @@ public class Main {
 
 record Universe(
     String name,
-    List<String> individuals
+    List<JsonNode> individuals
 ) { }
