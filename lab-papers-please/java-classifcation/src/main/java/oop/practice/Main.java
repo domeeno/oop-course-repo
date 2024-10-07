@@ -15,7 +15,6 @@ public class Main {
     File inputFile = new File("src/main/resources/test-input.json");
     JsonNode data = mapper.readTree(inputFile).get("data");
 
-    // TODO remove repetitions
     Universe starWars = new Universe("starwars", new ArrayList<>());
     Universe hitchhikers = new Universe("hitchhikers", new ArrayList<>());
     Universe marvel = new Universe("marvel", new ArrayList<>());
@@ -26,8 +25,6 @@ public class Main {
       System.out.println(entryAsString);
       Scanner scanner = new Scanner(System.in);
       String userInput = scanner.nextLine();
-      // TODO handle missinput
-      // TODO print the number and its universe
       switch (userInput) {
         case "1":
           starWars.individuals().add(entryAsString);
@@ -44,12 +41,13 @@ public class Main {
         default:
           System.out.println("Invalid input");
       }
+      scanner.close();
     }
 
     mapper.writeValue(new File("src/main/resources/output/starwars.json"), starWars);
-    mapper.writeValue(new File("src/main/resources/output/hitchhikers.json"), hitchhikers);
-    mapper.writeValue(new File("src/main/resources/output/marvel.json"), marvel);
+    mapper.writeValue(new File("src/main/resources/output/hitchhiker.json"), hitchhikers);
     mapper.writeValue(new File("src/main/resources/output/rings.json"), rings);
+    mapper.writeValue(new File("src/main/resources/output/marvel.json"), marvel);
   }
 }
 
