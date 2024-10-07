@@ -1,7 +1,0 @@
-{
-  "name": "marvel",
-  "individuals": [
-    "{\"id\":0,\"isHumanoid\":true,\"planet\":\"Asgard\",\"age\":2034,\"traits\":[\"BLONDE\",\"TALL\"]}",
-    "{\"id\":3,\"isHumanoid\":true,\"age\":7523}"
-  ]
-}
