@@ -1,0 +1,11 @@
+{
+  "name": "starwars",
+  "individuals": [
+    {
+      "id": 1,
+      "isHumanoid": false,
+      "planet": "Endor",
+      "age": 22
+    }
+  ]
+}

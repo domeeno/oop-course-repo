@@ -15,8 +15,8 @@ public class Main {
     File inputFile = new File("src/main/resources/test-input.json");
     JsonNode data = mapper.readTree(inputFile).get("data");
 
-    Universe starWars = new Universe("starwars", new ArrayList<>());
-    Universe hitchhikers = new Universe("hitchhikers", new ArrayList<>());
+    Universe starWars = new Universe("starWars", new ArrayList<>());
+    Universe hitchhikers = new Universe("hitchHiker", new ArrayList<>());
     Universe marvel = new Universe("marvel", new ArrayList<>());
     Universe rings = new Universe("rings", new ArrayList<>());
 

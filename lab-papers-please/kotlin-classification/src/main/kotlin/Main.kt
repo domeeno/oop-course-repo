@@ -11,7 +11,7 @@ fun main() {
   val input = objectMapper.readTree(File("src/main/resources/test-input.json"))
   val data = input["data"]
 
-  val starWars = Universe("starwars", mutableListOf())
+  val starWars = Universe("starWars", mutableListOf())
   val hitchHiker = Universe("hitchHiker", mutableListOf())
   val rings = Universe("rings", mutableListOf())
   val marvel = Universe("marvel", mutableListOf())
