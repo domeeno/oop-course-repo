@@ -15,45 +15,44 @@ public class Main {
     File inputFile = new File("src/main/resources/test-input.json");
     JsonNode data = mapper.readTree(inputFile).get("data");
 
-    // TODO remove repetitions
-    Universe starWars = new Universe("starwars", new ArrayList<>());
-    Universe hitchhikers = new Universe("hitchhikers", new ArrayList<>());
+    Universe starWars = new Universe("starWars", new ArrayList<>());
+    Universe hitchhikers = new Universe("hitchHiker", new ArrayList<>());
     Universe marvel = new Universe("marvel", new ArrayList<>());
     Universe rings = new Universe("rings", new ArrayList<>());
+
+    Scanner scanner = new Scanner(System.in);
 
     for (JsonNode entry : data) {
       String entryAsString = entry.toString();
       System.out.println(entryAsString);
-      Scanner scanner = new Scanner(System.in);
       String userInput = scanner.nextLine();
-      // TODO handle missinput
-      // TODO print the number and its universe
       switch (userInput) {
         case "1":
-          starWars.individuals().add(entryAsString);
+          starWars.individuals().add(entry);
           break;
         case "2":
-          hitchhikers.individuals().add(entryAsString);
+          hitchhikers.individuals().add(entry);
           break;
         case "3":
-          marvel.individuals().add(entryAsString);
+          marvel.individuals().add(entry);
           break;
         case "4":
-          rings.individuals().add(entryAsString);
+          rings.individuals().add(entry);
           break;
         default:
           System.out.println("Invalid input");
       }
     }
 
+    scanner.close();
     mapper.writeValue(new File("src/main/resources/output/starwars.json"), starWars);
-    mapper.writeValue(new File("src/main/resources/output/hitchhikers.json"), hitchhikers);
-    mapper.writeValue(new File("src/main/resources/output/marvel.json"), marvel);
+    mapper.writeValue(new File("src/main/resources/output/hitchhiker.json"), hitchhikers);
     mapper.writeValue(new File("src/main/resources/output/rings.json"), rings);
+    mapper.writeValue(new File("src/main/resources/output/marvel.json"), marvel);
   }
 }
 
 record Universe(
     String name,
-    List<String> individuals
+    List<JsonNode> individuals
 ) { }

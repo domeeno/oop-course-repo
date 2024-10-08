@@ -1,7 +1,0 @@
-{
-  "name": "starwars",
-  "individuals": [
-    "{\"id\":1,\"isHumanoid\":false,\"planet\":\"Endor\",\"age\":22}",
-    "{\"id\":5,\"isHumanoid\":false,\"traits\":[\"BULKY\"]}"
-  ]
-}

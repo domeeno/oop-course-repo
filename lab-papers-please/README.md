@@ -28,17 +28,18 @@ Using the classification system, and an input file of all the registered individ
 
 ### Inspirations for universes:
 
-* Book - The Hitchhicker's guide to the galaxy
+- Book - The Hitchhicker's guide to the galaxy
 
-* Marvel Universe
+- Marvel Universe
 
-* Star Wars Universe
+- Star Wars Universe
 
-* Lord of the Rings Universe
+- Lord of the Rings Universe
 
 ## Technical
 
 `input.json` contains the list of the individuals. Some entries have full info, some partial. Using the Classification in `classification.md` write to 4 output files the grouped result per universe.
 
-Some primitive solutions for a few languages have been provided by the government and are stored in `<language>-classification`. They are slow and manual, but decent place to experiment and start the final solution. Feel free to copy and build from those.
+`output` folder is how your end solution should write the files.
 
+Some primitive solutions for a few languages have been provided by the government and are stored in `<language>-classification`. They are slow and manual, but decent place to experiment and start the final solution. Feel free to copy and build from those.
