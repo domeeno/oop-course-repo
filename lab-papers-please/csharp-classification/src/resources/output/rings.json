@@ -1,0 +1,10 @@
+{
+  "Name": "rings",
+  "Individuals": [
+    {
+      "id": 3,
+      "isHumanoid": true,
+      "age": 7523
+    }
+  ]
+}
