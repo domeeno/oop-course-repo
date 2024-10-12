@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main {
   public static void main(String[] args) throws IOException {
@@ -15,13 +16,27 @@ public class Main {
     File inputFile = new File("./lab-papers-please/java-classification/src/main/resources/test-input.json");
     JsonNode data = mapper.readTree(inputFile).get("data");
 
-    String filePath = "./lab-papers-please/java-classification/src/main/resources/test-input.json";
-    CharacterTraitsPrinter printer = new CharacterTraitsPrinter();
-    try {
-      printer.printCharacterTraits(filePath);
-    } catch (IOException e) {
-      System.out.println("An error occurred while processing the file: " + e.getMessage());
-    }
+
+    Character character1 = new Character(0, false, "Kashyyyk", 253, Arrays.asList("HAIRY", "TALL"));
+
+    // Creating another character with default constructor and using setters
+    Character character2 = new Character();
+    character2.setId(1);
+    character2.setIsHumanoid(true);
+    character2.setPlanet("Betelgeuse");
+    character2.setAge(59);
+    character2.setTraits(Arrays.asList("EXTRA_ARMS", "EXTRA_HEAD"));
+
+    // Print character details
+    System.out.println(character1);
+    System.out.println(character2);
+
+//    CharacterTraitsPrinter printer = new CharacterTraitsPrinter();
+//    try {
+//      printer.printCharacterTraits(filePath);
+//    } catch (IOException e) {
+//      System.out.println("An error occurred while processing the file: " + e.getMessage());
+//    }
 
     Universe starWars = new Universe("starWars", new ArrayList<>());
     Universe hitchhikers = new Universe("hitchHiker", new ArrayList<>());
