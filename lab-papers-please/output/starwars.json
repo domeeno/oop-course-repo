@@ -1,11 +1,1 @@
-{
-  "name": "starwars",
-  "individuals": [
-    {
-      "id": 1,
-      "isHumanoid": false,
-      "planet": "Endor",
-      "age": 22
-    }
-  ]
-}
+{"name":"starWars","individuals":[{"id":0,"planet":"Kashyyyk","age":253,"traits":["HAIRY","TALL"],"humanoid":false},{"id":2,"planet":null,"age":0,"traits":["BULKY"],"humanoid":false},{"id":3,"planet":null,"age":253,"traits":["HAIRY","TALL"],"humanoid":false},{"id":4,"planet":"Earth","age":0,"traits":["SHORT","BULKY"],"humanoid":false},{"id":5,"planet":null,"age":0,"traits":["BULKY"],"humanoid":true},{"id":6,"planet":null,"age":26,"traits":["EXTRA_ARMS"],"humanoid":false},{"id":8,"planet":null,"age":82,"traits":["EXTRA_HEAD"],"humanoid":false},{"id":10,"planet":"Endor","age":0,"traits":null,"humanoid":false},{"id":11,"planet":null,"age":128,"traits":["GREEN"],"humanoid":false},{"id":12,"planet":"Endor","age":34,"traits":["HAIRY","SHORT"],"humanoid":false},{"id":13,"planet":"Kashyyyk","age":352,"traits":["HAIRY","TALL"],"humanoid":false},{"id":16,"planet":"Vogsphere","age":128,"traits":["GREEN","BULKY"],"humanoid":false},{"id":20,"planet":"Endor","age":22,"traits":null,"humanoid":false}]}

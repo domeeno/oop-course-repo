@@ -13,9 +13,9 @@ import java.util.ArrayList;
 
 public class Creature {
   private int id;
-  private boolean isHumanoid;
+  private Boolean isHumanoid;
   private String planet;
-  private int age;
+  private Integer age;
   private List<String> traits;
 
   // Constructor
@@ -32,7 +32,7 @@ public class Creature {
     return id;
   }
 
-  public boolean isHumanoid() {
+  public Boolean isHumanoid() {
     return isHumanoid;
   }
 
@@ -40,7 +40,7 @@ public class Creature {
     return planet;
   }
 
-  public int getAge() {
+  public Integer getAge() {
     return age;
   }
 
