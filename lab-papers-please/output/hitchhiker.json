@@ -1,27 +1,68 @@
-{
-  "name": "hitchHiker",
-  "individuals": [
-    {
-      "id": 2,
-      "isHumanoid": false,
-      "age": 128,
-      "traits": [
-        "GREEN"
-      ]
-    },
-    {
-      "id": 4,
-      "age": 26,
-      "traits": [
-        "EXTRA_ARMS"
-      ]
-    },
-    {
-      "id": 5,
-      "isHumanoid": false,
-      "traits": [
-        "BULKY"
-      ]
-    }
-  ]
-}
+[
+  {
+    "Id": 3,
+    "IsHumanoid": true,
+    "Planet": "Betelgeuse",
+    "Age": 59,
+    "Traits": [
+      "EXTRA_ARMS",
+      "EXTRA_HEAD"
+    ]
+  },
+  {
+    "Id": 4,
+    "IsHumanoid": false,
+    "Planet": "Vogsphere",
+    "Age": 128,
+    "Traits": [
+      "GREEN",
+      "BULKY"
+    ]
+  },
+  {
+    "Id": 10,
+    "IsHumanoid": null,
+    "Planet": "Betelgeuse",
+    "Age": 45,
+    "Traits": [
+      "EXTRA_ARMS",
+      "EXTRA_HEAD"
+    ]
+  },
+  {
+    "Id": 11,
+    "IsHumanoid": false,
+    "Planet": null,
+    "Age": 128,
+    "Traits": [
+      "GREEN"
+    ]
+  },
+  {
+    "Id": 17,
+    "IsHumanoid": null,
+    "Planet": null,
+    "Age": 26,
+    "Traits": [
+      "EXTRA_ARMS"
+    ]
+  },
+  {
+    "Id": 18,
+    "IsHumanoid": false,
+    "Planet": null,
+    "Age": null,
+    "Traits": [
+      "BULKY"
+    ]
+  },
+  {
+    "Id": 21,
+    "IsHumanoid": null,
+    "Planet": null,
+    "Age": 82,
+    "Traits": [
+      "EXTRA_HEAD"
+    ]
+  }
+]

@@ -15,7 +15,7 @@ public class LaboratoryData
 
     public void PrintInfo()
     {
-        Console.WriteLine($"ID: {Id}, IsHumanoid: {IsHumanoid}, Planet: {Planet ?? string.Empty}, Age: {Age}, Traits: {string.Join(", ", Traits ?? new List<string>())}");
+        
     }
 
 public string ClassifyByUniverse()
@@ -272,11 +272,17 @@ public class Program
     public static void Main(string[] args)
     {
         string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\..\\input.json");
+        string outputDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\..\\output");
 
         try
         {
-            string jsonString = File.ReadAllText(filePath);
+            
+            if (!Directory.Exists(outputDir))
+            {
+                Directory.CreateDirectory(outputDir);
+            }
 
+            string jsonString = File.ReadAllText(filePath);
             var options = new JsonSerializerOptions
             {
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
@@ -284,12 +290,44 @@ public class Program
 
             LaboratoryDataWrapper dataWrapper = JsonSerializer.Deserialize<LaboratoryDataWrapper>(jsonString, options);
 
+            
+            List<LaboratoryData> hitchhikerList = new List<LaboratoryData>();
+            List<LaboratoryData> marvelList = new List<LaboratoryData>();
+            List<LaboratoryData> ringsList = new List<LaboratoryData>();
+            List<LaboratoryData> starWarsList = new List<LaboratoryData>();
+
             foreach (var data in dataWrapper.Input)
             {
                 data.PrintInfo();
                 string classification = data.ClassifyByUniverse();
-                Console.WriteLine($"Classification: {classification}");
+                
+
+                
+                switch (classification)
+                {
+                    case "Hitchhiker's Universe (Vogons)":
+                    case "Hitchhiker's Universe (Betelgeusian)":
+                        hitchhikerList.Add(data);
+                        break;
+                    case "Marvel Universe (Asgardian)":
+                        marvelList.Add(data);
+                        break;
+                    case "Lord of the Rings Universe (Elf)":
+                    case "Lord of the Rings Universe (Dwarf)":
+                        ringsList.Add(data);
+                        break;
+                    case "Star Wars Universe (Wookie)":
+                    case "Star Wars Universe (Ewok)":
+                        starWarsList.Add(data);
+                        break;
+                }
             }
+
+            
+            WriteToJsonFile(Path.Combine(outputDir, "hitchhiker.json"), hitchhikerList);
+            WriteToJsonFile(Path.Combine(outputDir, "marvel.json"), marvelList);
+            WriteToJsonFile(Path.Combine(outputDir, "rings.json"), ringsList);
+            WriteToJsonFile(Path.Combine(outputDir, "starwars.json"), starWarsList);
         }
         catch (FileNotFoundException)
         {
@@ -303,5 +341,16 @@ public class Program
         {
             Console.WriteLine("An error occurred: " + ex.Message);
         }
+    }
+
+    
+    private static void WriteToJsonFile(string filePath, List<LaboratoryData> data)
+    {
+        var options = new JsonSerializerOptions
+        {
+            WriteIndented = true
+        };
+        string json = JsonSerializer.Serialize(data, options);
+        File.WriteAllText(filePath, json);
     }
 }

@@ -1,11 +1,56 @@
-{
-  "name": "starwars",
-  "individuals": [
-    {
-      "id": 1,
-      "isHumanoid": false,
-      "planet": "Endor",
-      "age": 22
-    }
-  ]
-}
+[
+  {
+    "Id": 0,
+    "IsHumanoid": false,
+    "Planet": "Kashyyyk",
+    "Age": 253,
+    "Traits": [
+      "HAIRY",
+      "TALL"
+    ]
+  },
+  {
+    "Id": 1,
+    "IsHumanoid": false,
+    "Planet": "Endor",
+    "Age": 34,
+    "Traits": [
+      "HAIRY",
+      "SHORT"
+    ]
+  },
+  {
+    "Id": 7,
+    "IsHumanoid": null,
+    "Planet": "Kashyyyk",
+    "Age": 352,
+    "Traits": [
+      "HAIRY",
+      "TALL"
+    ]
+  },
+  {
+    "Id": 8,
+    "IsHumanoid": false,
+    "Planet": "Endor",
+    "Age": 22,
+    "Traits": null
+  },
+  {
+    "Id": 14,
+    "IsHumanoid": false,
+    "Planet": null,
+    "Age": 253,
+    "Traits": [
+      "HAIRY",
+      "TALL"
+    ]
+  },
+  {
+    "Id": 15,
+    "IsHumanoid": null,
+    "Planet": "Endor",
+    "Age": null,
+    "Traits": null
+  }
+]

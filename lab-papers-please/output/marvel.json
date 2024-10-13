@@ -1,1 +1,32 @@
-{"name":"starwars","individuals":[{"id":1,"isHumanoid":false,"planet":"Endor","age":22}]}
+[
+  {
+    "Id": 2,
+    "IsHumanoid": true,
+    "Planet": "Asgard",
+    "Age": 2034,
+    "Traits": [
+      "BLONDE",
+      "TALL"
+    ]
+  },
+  {
+    "Id": 9,
+    "IsHumanoid": true,
+    "Planet": "Asgard",
+    "Age": null,
+    "Traits": [
+      "BLONDE",
+      "TALL"
+    ]
+  },
+  {
+    "Id": 16,
+    "IsHumanoid": true,
+    "Planet": null,
+    "Age": 154,
+    "Traits": [
+      "BLONDE",
+      "TALL"
+    ]
+  }
+]

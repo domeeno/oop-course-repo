@@ -1,1 +1,58 @@
-{"name":"rings","individuals":[{"id":3,"isHumanoid":true,"age":7523}]}
+[
+  {
+    "Id": 5,
+    "IsHumanoid": true,
+    "Planet": "Earth",
+    "Age": 451,
+    "Traits": [
+      "BLONDE",
+      "POINTY_EARS"
+    ]
+  },
+  {
+    "Id": 6,
+    "IsHumanoid": true,
+    "Planet": "Earth",
+    "Age": 124,
+    "Traits": [
+      "SHORT",
+      "BULKY"
+    ]
+  },
+  {
+    "Id": 12,
+    "IsHumanoid": true,
+    "Planet": null,
+    "Age": 7523,
+    "Traits": null
+  },
+  {
+    "Id": 13,
+    "IsHumanoid": null,
+    "Planet": "Earth",
+    "Age": null,
+    "Traits": [
+      "SHORT",
+      "BULKY"
+    ]
+  },
+  {
+    "Id": 19,
+    "IsHumanoid": true,
+    "Planet": "Earth",
+    "Age": 451,
+    "Traits": [
+      "BLONDE",
+      "TALL"
+    ]
+  },
+  {
+    "Id": 20,
+    "IsHumanoid": true,
+    "Planet": null,
+    "Age": null,
+    "Traits": [
+      "BULKY"
+    ]
+  }
+]
