@@ -23,7 +23,8 @@ public class Main {
 
 
     //FileManager.readAndPrint();
-    List<Individual> individualsList = mapper.readValue(data.toString(), new TypeReference<List<Individual>>() {});
+    List<Individual> individualsList = mapper.readValue(data.toString(), new TypeReference<>() {
+    });
 
     for (Individual test: individualsList){
       System.out.println(test.toString());

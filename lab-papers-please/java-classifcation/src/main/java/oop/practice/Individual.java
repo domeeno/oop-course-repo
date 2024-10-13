@@ -2,14 +2,21 @@ package oop.practice;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.DeserializationContext;
+import com.fasterxml.jackson.databind.JsonDeserializer;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
+import java.io.IOException;
 import java.util.ArrayList;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Individual {
-    
+
     @JsonProperty("id")
     private int id;
     @JsonProperty("isHumanoid")
+    @JsonDeserialize(using = BooleanStateDeserializer.class)
     private BooleanState isHumanoid = BooleanState.UNKNOWN;
     @JsonProperty("planet")
     private String planet;
@@ -83,5 +90,14 @@ public class Individual {
                 ", age=" + age +
                 ", traits=" + traits +
                 '}';
+    }
+}
+
+class BooleanStateDeserializer extends JsonDeserializer<BooleanState> {
+    @Override
+    public BooleanState deserialize(JsonParser p, DeserializationContext context)
+            throws IOException, JsonProcessingException {
+        Boolean value = p.getBooleanValue(); // Get the boolean value from the JSON
+        return value != null ? (value ? BooleanState.TRUE : BooleanState.FALSE) : BooleanState.UNKNOWN;
     }
 }
