@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\csharp-classification",
+    "\\csharp-classification\\Resources",
+    "\\csharp-classification\\Resources\\Outputs"
   ],
+  "SelectedNode": "\\csharp-classification\\Resources\\Outputs\\starwars.json",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,68 @@
+[
+  {
+    "Id": 1,
+    "Planet": "Betelgeuse",
+    "IsHumanoid": true,
+    "Age": 59.0,
+    "Traits": [
+      "EXTRA_ARMS",
+      "EXTRA_HEAD"
+    ]
+  },
+  {
+    "Id": 2,
+    "Planet": "",
+    "IsHumanoid": false,
+    "Age": null,
+    "Traits": [
+      "BULKY"
+    ]
+  },
+  {
+    "Id": 6,
+    "Planet": "",
+    "IsHumanoid": null,
+    "Age": 26.0,
+    "Traits": [
+      "EXTRA_ARMS"
+    ]
+  },
+  {
+    "Id": 8,
+    "Planet": "",
+    "IsHumanoid": null,
+    "Age": 82.0,
+    "Traits": [
+      "EXTRA_HEAD"
+    ]
+  },
+  {
+    "Id": 11,
+    "Planet": "",
+    "IsHumanoid": false,
+    "Age": 128.0,
+    "Traits": [
+      "GREEN"
+    ]
+  },
+  {
+    "Id": 16,
+    "Planet": "Vogsphere",
+    "IsHumanoid": false,
+    "Age": 128.0,
+    "Traits": [
+      "GREEN",
+      "BULKY"
+    ]
+  },
+  {
+    "Id": 21,
+    "Planet": "Betelgeuse",
+    "IsHumanoid": null,
+    "Age": 45.0,
+    "Traits": [
+      "EXTRA_ARMS",
+      "EXTRA_HEAD"
+    ]
+  }
+]

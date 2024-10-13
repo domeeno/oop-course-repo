@@ -1,0 +1,32 @@
+[
+  {
+    "Id": 7,
+    "Planet": "Asgard",
+    "IsHumanoid": true,
+    "Age": 2034.0,
+    "Traits": [
+      "BLONDE",
+      "TALL"
+    ]
+  },
+  {
+    "Id": 17,
+    "Planet": "",
+    "IsHumanoid": true,
+    "Age": 154.0,
+    "Traits": [
+      "BLONDE",
+      "TALL"
+    ]
+  },
+  {
+    "Id": 18,
+    "Planet": "Asgard",
+    "IsHumanoid": true,
+    "Age": null,
+    "Traits": [
+      "BLONDE",
+      "TALL"
+    ]
+  }
+]

@@ -20,6 +20,9 @@ x64/
 x86/
 bld/
 [Bb]in/
+# Except for the specific JSON output files
+![Bb]in/**/Resources/Outputs/*.json
+
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
