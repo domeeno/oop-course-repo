@@ -1,0 +1,13 @@
+{
+    "individuals": [
+        {
+            "age": 128,
+            "id": 2,
+            "isHumanoid": false,
+            "traits": [
+                "GREEN"
+            ]
+        }
+    ],
+    "name": "marvel"
+}
