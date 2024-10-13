@@ -1,43 +1,78 @@
-﻿namespace YourProjectName
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
+
+public class LaboratoryDataWrapper
 {
-    public class LaboratoryData
+    public List<LaboratoryData> Input { get; set; }
+}
+
+public class LaboratoryData
+{
+    public int Id { get; set; }
+    public bool? IsHumanoid { get; set; }
+    public string Planet { get; set; }
+    public int? Age { get; set; }
+    public List<string> Traits { get; set; }
+
+    public void PrintInfo()
     {
-        public int Id { get; set; }
-        public bool? IsHumanoid { get; set; }  
-        public string Planet { get; set; }
-        public int? Age { get; set; }           
-        public List<string> Traits { get; set; }
-
-        
-        public LaboratoryData(int id, bool? isHumanoid, string planet, int? age, List<string> traits)
-        {
-            Id = id;
-            IsHumanoid = isHumanoid;
-            Planet = planet;
-            Age = age;
-            Traits = traits ?? new List<string>(); 
-        }
-
-        
-        public void Print()
-        {
-            Console.WriteLine($"ID: {Id}, IsHumanoid: {IsHumanoid}, Planet: {Planet}, Age: {Age}, Traits: {string.Join(", ", Traits)}");
-        }
+        Console.WriteLine($"ID: {Id}, IsHumanoid: {IsHumanoid}, Planet: {Planet ?? string.Empty}, Age: {Age}, Traits: {string.Join(", ", Traits ?? new List<string>())}");
     }
+}
 
-    class Program
+public class Program
+{
+    public static void Main(string[] args)
     {
-        static void Main(string[] args)
+        
+        string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\..\\input.json");
+
+        try
         {
             
-            var labData1 = new LaboratoryData(0, false, "Kashyyyk", 253, new List<string> { "HAIRY", "TALL" });
-            var labData2 = new LaboratoryData(1, false, "Endor", 34, new List<string> { "HAIRY", "SHORT" });
-            var labData3 = new LaboratoryData(2, true, "Asgard", 2034, new List<string> { "BLONDE", "TALL" });
+            string jsonString = File.ReadAllText(filePath);
+
+            var options = new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            };
 
             
-            labData1.Print();
-            labData2.Print();
-            labData3.Print();
+            LaboratoryDataWrapper dataWrapper = JsonSerializer.Deserialize<LaboratoryDataWrapper>(jsonString, options);
+
+            
+            if (dataWrapper == null)
+            {
+                Console.WriteLine("Deserialization returned null.");
+                return;
+            }
+
+            
+            if (dataWrapper.Input == null)
+            {
+                Console.WriteLine("The Input property is null.");
+                return;
+            }
+
+            
+            foreach (var data in dataWrapper.Input)
+            {
+                data.PrintInfo();
+            }
+        }
+        catch (FileNotFoundException)
+        {
+            Console.WriteLine("Error: The file was not found.");
+        }
+        catch (JsonException ex)
+        {
+            Console.WriteLine("Error parsing JSON: " + ex.Message);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("An error occurred: " + ex.Message);
         }
     }
 }
