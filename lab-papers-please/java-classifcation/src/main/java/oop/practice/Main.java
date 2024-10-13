@@ -1,5 +1,6 @@
 package oop.practice;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -20,35 +21,42 @@ public class Main {
     Universe marvel = new Universe("marvel", new ArrayList<>());
     Universe rings = new Universe("rings", new ArrayList<>());
 
-    Scanner scanner = new Scanner(System.in);
+    List<Individual> individualsList = mapper.readValue(data.toString(), new TypeReference<List<Individual>>() {});
 
-    for (JsonNode entry : data) {
-      String entryAsString = entry.toString();
-      System.out.println(entryAsString);
-      String userInput = scanner.nextLine();
-      switch (userInput) {
-        case "1":
-          starWars.individuals().add(entry);
-          break;
-        case "2":
-          hitchhikers.individuals().add(entry);
-          break;
-        case "3":
-          marvel.individuals().add(entry);
-          break;
-        case "4":
-          rings.individuals().add(entry);
-          break;
-        default:
-          System.out.println("Invalid input");
-      }
+    for (Individual test: individualsList){
+      System.out.println(test.toString());
     }
 
-    scanner.close();
-    mapper.writeValue(new File("src/main/resources/output/starwars.json"), starWars);
-    mapper.writeValue(new File("src/main/resources/output/hitchhiker.json"), hitchhikers);
-    mapper.writeValue(new File("src/main/resources/output/rings.json"), rings);
-    mapper.writeValue(new File("src/main/resources/output/marvel.json"), marvel);
+    Scanner scanner = new Scanner(System.in);
+
+//    for (JsonNode entry : data) {
+//      String entryAsString = entry.toString();
+//
+//      System.out.println(entryAsString);
+//      String userInput = scanner.nextLine();
+//      switch (userInput) {
+//        case "1":
+//          starWars.individuals().add(entry);
+//          break;
+//        case "2":
+//          hitchhikers.individuals().add(entry);
+//          break;
+//        case "3":
+//          marvel.individuals().add(entry);
+//          break;
+//        case "4":
+//          rings.individuals().add(entry);
+//          break;
+//        default:
+//          System.out.println("Invalid input");
+//      }
+//    }
+//
+//    scanner.close();
+//    mapper.writeValue(new File("src/main/resources/output/starwars.json"), starWars);
+//    mapper.writeValue(new File("src/main/resources/output/hitchhiker.json"), hitchhikers);
+//    mapper.writeValue(new File("src/main/resources/output/rings.json"), rings);
+//    mapper.writeValue(new File("src/main/resources/output/marvel.json"), marvel);
   }
 }
 

@@ -1,14 +1,32 @@
 package oop.practice;
 
-import java.util.ArrayList;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.util.ArrayList;
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Individual {
+    @JsonProperty("id")
     private int id;
+    @JsonProperty("isHumanoid")
     private boolean isHumanoid;
+    @JsonProperty("planet")
     private String planet;
+    @JsonProperty("age")
     private int age;
+    @JsonProperty("traits")
     private ArrayList<String> traits;
 
+    public Individual(){
+
+    }
+    public Individual(int id, boolean humanoid, String planet, int age, ArrayList<String> traits) {
+        this.id = id;
+        isHumanoid = humanoid;
+        this.planet = planet;
+        this.age = age;
+        this.traits = traits;
+    }
 
     public int getId() {
         return id;
@@ -18,7 +36,7 @@ public class Individual {
         this.id = id;
     }
 
-    public boolean isHumanoid() {
+    public boolean getHumanoidStatus() {
         return isHumanoid;
     }
 
@@ -48,5 +66,16 @@ public class Individual {
 
     public void setTraits(ArrayList<String> traits) {
         this.traits = traits;
+    }
+
+    @Override
+    public String toString() {
+        return "Individual{" +
+                "id=" + id +
+                ", isHumanoid=" + isHumanoid +
+                ", planet='" + planet + '\'' +
+                ", age=" + age +
+                ", traits=" + traits +
+                '}';
     }
 }
