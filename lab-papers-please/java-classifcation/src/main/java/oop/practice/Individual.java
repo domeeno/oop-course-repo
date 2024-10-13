@@ -6,10 +6,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.ArrayList;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Individual {
+    
     @JsonProperty("id")
     private int id;
     @JsonProperty("isHumanoid")
-    private boolean isHumanoid;
+    private BooleanState isHumanoid = BooleanState.UNKNOWN;
     @JsonProperty("planet")
     private String planet;
     @JsonProperty("age")
@@ -22,7 +23,12 @@ public class Individual {
     }
     public Individual(int id, boolean humanoid, String planet, int age, ArrayList<String> traits) {
         this.id = id;
-        isHumanoid = humanoid;
+        if(humanoid){
+            this.isHumanoid = BooleanState.TRUE;
+        } else if (!humanoid) {
+            this.isHumanoid = BooleanState.FALSE;
+        }
+
         this.planet = planet;
         this.age = age;
         this.traits = traits;
@@ -36,11 +42,11 @@ public class Individual {
         this.id = id;
     }
 
-    public boolean getHumanoidStatus() {
+    public BooleanState getHumanoidStatus() {
         return isHumanoid;
     }
 
-    public void setHumanoid(boolean humanoid) {
+    public void setHumanoid(BooleanState humanoid) {
         isHumanoid = humanoid;
     }
 

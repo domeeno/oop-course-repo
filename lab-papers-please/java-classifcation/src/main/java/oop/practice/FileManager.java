@@ -7,11 +7,6 @@ import java.io.File;
 import java.io.IOException;
 
 public class FileManager {
-    public enum BooleanState {
-        TRUE,
-        FALSE,
-        UNKNOWN
-    }
     public static void readAndPrint() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         File inputFile = new File("src/main/resources/test-input.json");
