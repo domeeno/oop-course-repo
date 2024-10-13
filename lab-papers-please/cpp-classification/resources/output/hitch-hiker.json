@@ -1,0 +1,18 @@
+{
+    "individuals": [
+        {
+            "age": 22,
+            "id": 1,
+            "isHumanoid": false,
+            "planet": "Endor"
+        },
+        {
+            "id": 5,
+            "isHumanoid": false,
+            "traits": [
+                "BULKY"
+            ]
+        }
+    ],
+    "name": "hitch-hiker"
+}
