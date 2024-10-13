@@ -19,7 +19,7 @@ public class Individual {
     @JsonDeserialize(using = BooleanStateDeserializer.class)
     private BooleanState isHumanoid = BooleanState.UNKNOWN;
     @JsonProperty("planet")
-    private String planet;
+    private String planet = "UNKNOWN";
     @JsonProperty("age")
     private int age;
     @JsonProperty("traits")
@@ -83,13 +83,13 @@ public class Individual {
 
     @Override
     public String toString() {
-        return "Individual{" +
-                "id=" + id +
-                ", isHumanoid=" + isHumanoid +
-                ", planet='" + planet + '\'' +
-                ", age=" + age +
-                ", traits=" + traits +
-                '}';
+        return "\nIndividual" +
+                " ID:" + id + "\n{" +
+                "\nisHumanoid=" + isHumanoid +
+                "\nplanet='" + planet + '\'' +
+                "\nage=" + age +
+                "\ntraits=" + (traits == null ? "UNKNOWN" : traits) +
+                "\n}";
     }
 }
 

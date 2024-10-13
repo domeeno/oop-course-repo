@@ -25,12 +25,33 @@ public class Main {
     //FileManager.readAndPrint();
     List<Individual> individualsList = mapper.readValue(data.toString(), new TypeReference<>() {
     });
+    //Print all the data
+    System.out.println("All Individuals: ");
+    for (Individual obj: individualsList){
 
-    for (Individual test: individualsList){
-      System.out.println(test.toString());
+      System.out.println(obj.toString());
     }
 
-    Scanner scanner = new Scanner(System.in);
+    System.out.println("\nIndividuals with even id: ");
+    //Print only the objects with even ids
+    for (Individual obj: individualsList){
+      if(obj.getId() % 2 == 0){
+        System.out.println(obj.toString());
+      }
+    }
+    System.out.println("\nIndividuals with known planets: ");
+    //Print only the objects with even ids
+    for (Individual obj: individualsList){
+      if(!obj.getPlanet().equals("UNKNOWN")){
+        System.out.println(obj.toString());
+      }
+    }
+
+
+
+
+
+//    Scanner scanner = new Scanner(System.in);
 
 //    for (JsonNode entry : data) {
 //      String entryAsString = entry.toString();
