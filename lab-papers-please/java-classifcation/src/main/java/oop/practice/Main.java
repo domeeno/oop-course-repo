@@ -166,92 +166,97 @@ public class Main {
       }
     }
 
-//    String menuChoice = "";
-//    while (!menuChoice.equals("0")) {
-//
-//    System.out.println("Menu:");
-//    System.out.println("1. Display all creatures.");
-//    System.out.println("2. Add new creature.");
-//    System.out.println("3. Display creature by id.");
-//    System.out.println("4. Display creatures with even or odd id");
-//    System.out.println("0. Exit...");
-//
-//    System.out.print("Chose a number: ");
-//    menuChoice = scanner.nextLine();
+    String menuChoice = "";
+    while (!menuChoice.equals("0")) {
 
-//    switch (menuChoice){
-//      case "1":
-//        for (Creature creature : creatures) {
-//          creature.displayAllCreatureDetails();
-//        }
-//        break;
-//
-//      case "2":
-//        Creature newCreature = new Creature(0, false, null, 0, new ArrayList<>());
-//        newCreature.addNewCreature(creatures, maxId, inputFile,mapper);
-//        maxId++;
-//        break;
-//
-//      case "3":
-//        System.out.print("Enter the ID of the creature you want to display: ");
-//        int searchId = Integer.parseInt(scanner.nextLine());
-//        Creature.displayCreatureById(creatures, searchId);
-//        break;
-//
-//      case "4":
-//        System.out.print("Even or odd (e/o)?");
-//        String choice = scanner.nextLine().toLowerCase();
-//
-//        if (choice.equals("e")) {
-//          System.out.println("Displaying creatures with even IDs:");
-//          for (Creature creature : creatures) {
-//            if (creature.getId() % 2 == 0) {
-//              creature.displayAllCreatureDetails();
-//            }
-//          }
-//        } else if (choice.equals("o")) {
-//          System.out.println("Displaying creatures with odd IDs:");
-//          for (Creature creature : creatures) {
-//            if (creature.getId() % 2 != 0) {
-//              creature.displayAllCreatureDetails();
-//            }
-//          }
-//        } else {
-//          System.out.println("Invalid choice. Please select 'e' for even or 'o' for odd.");
-//        }
-//        break;
-//
-//      case "0":
-//        System.out.println("Exiting program.");
-//        break;
-//
-//      default:
-//        System.out.println("Invalid choice. Please select 1, 2, or 3.");
-//    }
-//    }
-//
-//    scanner.close();
+    System.out.println("Menu:");
+    System.out.println("1. Display all creatures.");
+    System.out.println("2. Add new creature.");
+    System.out.println("3. Display creature by id.");
+    System.out.println("4. Display creatures with even or odd id");
+      System.out.println("5. Classify creature in their own universe");
+    System.out.println("0. Exit...");
 
+    System.out.print("Chose a number: ");
+    menuChoice = scanner.nextLine();
 
-    Universe starWars = new Universe("starWars", new ArrayList<>());
-    Universe hitchhikers = new Universe("hitchHiker", new ArrayList<>());
-    Universe marvel = new Universe("marvel", new ArrayList<>());
-    Universe rings = new Universe("rings", new ArrayList<>());
+    switch (menuChoice){
+      case "1":
+        for (Creature creature : creatures) {
+          creature.displayAllCreatureDetails();
+        }
+        break;
 
-      for (Creature creature : creatures) {
-        classifyCreature(creature, starWars, marvel, hitchhikers, rings);
-      }
+      case "2":
+        Creature newCreature = new Creature(0, false, null, 0, new ArrayList<>());
+        newCreature.addNewCreature(creatures, maxId, inputFile,mapper);
+        maxId++;
+        break;
+
+      case "3":
+        System.out.print("Enter the ID of the creature you want to display: ");
+        int searchId = Integer.parseInt(scanner.nextLine());
+        Creature.displayCreatureById(creatures, searchId);
+        break;
+
+      case "4":
+        System.out.print("Even or odd (e/o)?");
+        String choice = scanner.nextLine().toLowerCase();
+
+        if (choice.equals("e")) {
+          System.out.println("Displaying creatures with even IDs:");
+          for (Creature creature : creatures) {
+            if (creature.getId() % 2 == 0) {
+              creature.displayAllCreatureDetails();
+            }
+          }
+        } else if (choice.equals("o")) {
+          System.out.println("Displaying creatures with odd IDs:");
+          for (Creature creature : creatures) {
+            if (creature.getId() % 2 != 0) {
+              creature.displayAllCreatureDetails();
+            }
+          }
+        } else {
+          System.out.println("Invalid choice. Please select 'e' for even or 'o' for odd.");
+        }
+        break;
+
+      case "5":
+        Universe starWars = new Universe("starWars", new ArrayList<>());
+        Universe hitchhikers = new Universe("hitchHiker", new ArrayList<>());
+        Universe marvel = new Universe("marvel", new ArrayList<>());
+        Universe rings = new Universe("rings", new ArrayList<>());
+
+        for (Creature creature : creatures) {
+          classifyCreature(creature, starWars, marvel, hitchhikers, rings);
+        }
 
 
-    File outputDir = new File("src/main/resources/output");
-    if (!outputDir.exists()) {
-      outputDir.mkdirs();  // Create the directory
+        File outputDir = new File("src/main/resources/output");
+        if (!outputDir.exists()) {
+          outputDir.mkdirs();  // Create the directory
+        }
+
+        mapper.writeValue(new File("D:/POO Labs/oop-course-repo/lab-papers-please/output/starwars.json"), starWars);
+        mapper.writeValue(new File("D:/POO Labs/oop-course-repo/lab-papers-please/output/hitchhiker.json"), hitchhikers);
+        mapper.writeValue(new File("D:/POO Labs/oop-course-repo/lab-papers-please/output/rings.json"), rings);
+        mapper.writeValue(new File("D:/POO Labs/oop-course-repo/lab-papers-please/output/marvel.json"), marvel);
+
+        break;
+
+      case "0":
+        System.out.println("Exiting program.");
+        break;
+
+      default:
+        System.out.println("Invalid choice. Please select 1, 2, or 3.");
+    }
     }
 
-    mapper.writeValue(new File("D:/POO Labs/oop-course-repo/lab-papers-please/output/starwars.json"), starWars);
-    mapper.writeValue(new File("D:/POO Labs/oop-course-repo/lab-papers-please/output/hitchhiker.json"), hitchhikers);
-    mapper.writeValue(new File("D:/POO Labs/oop-course-repo/lab-papers-please/output/rings.json"), rings);
-    mapper.writeValue(new File("D:/POO Labs/oop-course-repo/lab-papers-please/output/marvel.json"), marvel);
+    scanner.close();
+
+
 
   }
 };
