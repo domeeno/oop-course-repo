@@ -21,6 +21,8 @@ public class Main {
     Universe marvel = new Universe("marvel", new ArrayList<>());
     Universe rings = new Universe("rings", new ArrayList<>());
 
+
+    FileManager.readAndPrint();
     List<Individual> individualsList = mapper.readValue(data.toString(), new TypeReference<List<Individual>>() {});
 
     for (Individual test: individualsList){
