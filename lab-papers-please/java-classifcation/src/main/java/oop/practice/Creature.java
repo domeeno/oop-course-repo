@@ -58,29 +58,23 @@ public class Creature {
 
   public void addNewCreature(List<Creature> creatures, int currentMaxId, File inputFile, ObjectMapper mapper) throws IOException{
     Scanner scanner = new Scanner(System.in);
-    //ask if the user wants to add a new creature
-    System.out.println("Do you want to add a new creature in the data base? (y/n)");
-    String choice = scanner.nextLine();
 
-    if (Objects.equals(choice, "y")) {
+      int id = currentMaxId + 1; //assign as the next available id
 
-      System.out.println("Enter ID:");
-      int id = scanner.nextInt();
-
-      System.out.println("Is Humanoid (true/false):");
+      System.out.print("Is Humanoid (true/false): ");
       boolean isHumanoid = scanner.nextBoolean();
 
-      System.out.println("Enter Planet (or leave blank for none):");
-      scanner.nextLine(); // Consume newline
+      System.out.print("Enter Planet (or leave blank for none): ");
+      scanner.nextLine();
       String planet = scanner.nextLine();
 
-      System.out.println("Enter Age:");
+      System.out.print("Enter Age: ");
       int age = scanner.nextInt();
 
       scanner.nextLine(); // consume newline
 
       List<String> traits = new ArrayList<>();
-      System.out.println("Enter traits (separate by commas, leave blank if none):");
+      System.out.print("Enter traits (separate by commas, leave blank if none): ");
       String traitsInput = scanner.nextLine();
 
       if (!traitsInput.isEmpty()) {
@@ -98,7 +92,7 @@ public class Creature {
       newCreature.displayAllCreatureDetails();
 
       saveCreaturesToJson(creatures, inputFile, mapper);
-    }
+
   }
 
   public void saveCreaturesToJson(List<Creature> creatures, File inputFile, ObjectMapper mapper) throws IOException {

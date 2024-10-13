@@ -66,7 +66,7 @@ public class Main {
       case "2":
         Creature newCreature = new Creature(0, false, null, 0, new ArrayList<>());
         newCreature.addNewCreature(creatures, maxId, inputFile,mapper);
-
+        maxId++;
         break;
 
       case "3":
