@@ -47,7 +47,7 @@ public class Creature {
   public List<String> getTraits() {
     return traits;
   }
-  public void displayCreatureDetails() {
+  public void displayAllCreatureDetails() {
     System.out.println("ID: " + id);
     System.out.println("Is Humanoid: " + isHumanoid);
     System.out.println("Planet: " + (planet != null ? planet : "Unknown"));
@@ -95,7 +95,7 @@ public class Creature {
       creatures.add(newCreature);
 
       System.out.println("New Creature Added:");
-      newCreature.displayCreatureDetails();
+      newCreature.displayAllCreatureDetails();
 
       saveCreaturesToJson(creatures, inputFile, mapper);
     }
@@ -132,5 +132,13 @@ public class Creature {
     System.out.println("Modifications saved to " + inputFile.getPath());
   }
 
-
+  public static void displayCreatureById(List<Creature> creatures, int searchId) {
+    for (Creature creature : creatures) {
+      if (creature.getId() == searchId) {
+        creature.displayAllCreatureDetails();
+        return;  // Exit the method once the creature is found
+      }
+    }
+    System.out.println("No creature found with ID: " + searchId);
+  }
 }
