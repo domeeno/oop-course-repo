@@ -48,39 +48,32 @@ public class Main {
     }
 
 
+    for (Individual individual : individualsList) {
+      JsonNode jsonNode = mapper.valueToTree(individual);
+      switch (Classification.getClassification(individual)) {
+        case 1:
+
+          starWars.individuals().add(jsonNode);
+          break;
+        case 2:
+          marvel.individuals().add(jsonNode);
+          break;
+        case 3:
+          hitchhikers.individuals().add(jsonNode);
+          break;
+        case 4:
+          rings.individuals().add(jsonNode);
+          break;
+        default:
+          System.out.println("Something went wrong for id: " + individual.getId());
+      }
+    }
 
 
-
-//    Scanner scanner = new Scanner(System.in);
-
-//    for (JsonNode entry : data) {
-//      String entryAsString = entry.toString();
-//
-//      System.out.println(entryAsString);
-//      String userInput = scanner.nextLine();
-//      switch (userInput) {
-//        case "1":
-//          starWars.individuals().add(entry);
-//          break;
-//        case "2":
-//          hitchhikers.individuals().add(entry);
-//          break;
-//        case "3":
-//          marvel.individuals().add(entry);
-//          break;
-//        case "4":
-//          rings.individuals().add(entry);
-//          break;
-//        default:
-//          System.out.println("Invalid input");
-//      }
-//    }
-//
-//    scanner.close();
-//    mapper.writeValue(new File("src/main/resources/output/starwars.json"), starWars);
-//    mapper.writeValue(new File("src/main/resources/output/hitchhiker.json"), hitchhikers);
-//    mapper.writeValue(new File("src/main/resources/output/rings.json"), rings);
-//    mapper.writeValue(new File("src/main/resources/output/marvel.json"), marvel);
+    mapper.writeValue(new File("C:/Users/catal/OneDrive/Desktop/UNI/OOP/Lab1_oop_papers_please/lab-papers-please/output/starwars.json"), starWars);
+    mapper.writeValue(new File("C:/Users/catal/OneDrive/Desktop/UNI/OOP/Lab1_oop_papers_please/lab-papers-please/output/hitchhiker.json"), hitchhikers);
+    mapper.writeValue(new File("C:/Users/catal/OneDrive/Desktop/UNI/OOP/Lab1_oop_papers_please/lab-papers-please/output/rings.json"), rings);
+    mapper.writeValue(new File("C:/Users/catal/OneDrive/Desktop/UNI/OOP/Lab1_oop_papers_please/lab-papers-please/output/marvel.json"), marvel);
   }
 }
 
