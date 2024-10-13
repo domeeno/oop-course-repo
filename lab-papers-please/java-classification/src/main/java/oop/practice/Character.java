@@ -1,32 +1,53 @@
 package oop.practice;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.DeserializationContext;
+import com.fasterxml.jackson.databind.JsonDeserializer;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
+import java.io.IOException;
 import java.util.List;
+
+enum BooleanState {
+    TRUE, FALSE, UNKNOWN
+}
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Character {
+
     @JsonProperty("id")
     private int id;
+
     @JsonProperty("isHumanoid")
-    private boolean isHumanoid;
+    @JsonDeserialize(using = BooleanStateDeserializer.class)
+    private BooleanState isHumanoid = BooleanState.UNKNOWN;
+
     @JsonProperty("planet")
-    private String planet;
+    private String planet = "UNKNOWN";
+
     @JsonProperty("age")
     private int age;
+
     @JsonProperty("traits")
     private List<String> traits;
 
     public Character(int id, boolean isHumanoid, String planet, int age, List<String> traits) {
         this.id = id;
-        this.isHumanoid = isHumanoid;
-        this.planet = planet;
+        if(isHumanoid){
+            this.isHumanoid = BooleanState.TRUE;
+        } else if (isHumanoid) {
+            this.isHumanoid = BooleanState.FALSE;
+        }        this.planet = planet;
         this.age = age;
         this.traits = traits;
     }
 
     public Character() {}
 
+    // Getters and Setters
     public int getId() {
         return id;
     }
@@ -35,11 +56,11 @@ public class Character {
         this.id = id;
     }
 
-    public boolean getIsHumanoid() {
+    public BooleanState getIsHumanoid() {
         return isHumanoid;
     }
 
-    public void setIsHumanoid(Boolean isHumanoid) {
+    public void setIsHumanoid(BooleanState isHumanoid) {
         this.isHumanoid = isHumanoid;
     }
 
@@ -55,7 +76,7 @@ public class Character {
         return age;
     }
 
-    public void setAge(Integer age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
@@ -69,12 +90,21 @@ public class Character {
 
     @Override
     public String toString() {
-        return "Character{" +
-                "id=" + id +
-                ", isHumanoid=" + isHumanoid +
-                ", planet='" + planet + '\'' +
-                ", age=" + age +
-                ", traits=" + traits +
-                '}';
+        return "\nIndividual" +
+                " ID:" + id + "\n{" +
+                "\nisHumanoid=" + isHumanoid +
+                "\nplanet='" + planet + '\'' +
+                "\nage=" + age +
+                "\ntraits=" + (traits == null ? "UNKNOWN" : traits) +
+                "\n}";
+    }
+}
+
+class BooleanStateDeserializer extends JsonDeserializer<BooleanState> {
+    @Override
+    public BooleanState deserialize(JsonParser p, DeserializationContext context)
+            throws IOException, JsonProcessingException {
+        Boolean value = p.getBooleanValue();
+        return value != null ? (value ? BooleanState.TRUE : BooleanState.FALSE) : BooleanState.UNKNOWN;
     }
 }

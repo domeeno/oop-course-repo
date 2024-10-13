@@ -23,12 +23,28 @@ public class Main {
     Universe marvel = new Universe("marvel", new ArrayList<>());
     Universe rings = new Universe("rings", new ArrayList<>());
 
-    List<Character> individualsList = mapper.readValue(data.toString(), new TypeReference<List<Character>>() {});
+    List<Character> charactersList = mapper.readValue(data.toString(), new TypeReference<List<Character>>() {});
 
-    for (Character test: individualsList){
-      System.out.println(test.toString());
+    System.out.println("All Characters: ");
+    for (Character obj: charactersList){
+
+      System.out.println(obj.toString());
     }
 
+    System.out.println("\nCharacters with odd id: ");
+    for (Character obj: charactersList){
+      if(obj.getId() % 2 != 0){
+        System.out.println(obj.toString());
+      }
+    }
+    System.out.println("\nCharacters with specified age: ");
+    for (Character obj: charactersList){
+      if (obj.getAge() > 0) {
+        System.out.println(obj.toString());
+      } else {
+        System.out.println("\nCharacter with unknown age (age = 0): " + obj.toString());
+      }
+    }
     Scanner scanner = new Scanner(System.in);
 
 //    for (JsonNode entry : data) {
