@@ -1,6 +1,4 @@
 ﻿using csharp_classification.Core;
-using System;
-using System.Collections.Generic;
 
 class Program
 {
@@ -25,7 +23,6 @@ class Program
                 new Subspecies { IsHumanoid = false, Planet = "Vogsphere", MaxAge = 200, Traits = new List<string> { "GREEN", "BULKY" }},
 
             }
-
             }
 
         };

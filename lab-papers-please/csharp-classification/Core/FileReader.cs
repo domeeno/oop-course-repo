@@ -1,8 +1,5 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+
 
 namespace csharp_classification.Core
 {
@@ -33,7 +30,7 @@ namespace csharp_classification.Core
                 {
                     string filePath = Path.Combine(basePath, "Resources", "Outputs", $"{group.Key.ToLower()}.json");
                     
-                    Console.WriteLine($"Writing {group.Count()} aliens to {filePath}");
+                    Console.WriteLine($"Writing {group.Count()} aliens to Resources/Outputs/{group.Key.ToLower()}.json");
                     File.WriteAllText(filePath, JsonConvert.SerializeObject(group.ToList(), Formatting.Indented));
                 }
 
