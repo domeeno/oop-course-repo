@@ -115,14 +115,14 @@ public class Classification {
         List<String> traits = individual.getTraits();
 
         // Print out the current values for debugging
-        System.out.println("ID: " + individual.getId() +
-                ", isHumanoid: " + isHumanoid +
-                ", planet: " + planet +
-                ", age: " + age +
-                ", traits: " + traits);
+//        System.out.println("ID: " + individual.getId() +
+//                ", isHumanoid: " + isHumanoid +
+//                ", planet: " + planet +
+//                ", age: " + age +
+//                ", traits: " + traits);
 
         // Default classification value
-        int classification = -1;
+
 
         // Handle Star Wars Classification
         if (isHumanoid == null || isHumanoid == BooleanState.FALSE) {
