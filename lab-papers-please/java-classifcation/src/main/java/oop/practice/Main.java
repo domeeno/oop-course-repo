@@ -51,6 +51,7 @@ public class Main {
     System.out.println("1. Display all creatures.");
     System.out.println("2. Add new creature.");
     System.out.println("3. Display creature by id.");
+    System.out.println("4. Display creatures with even or odd id");
     System.out.println("0. Exit...");
 
     System.out.print("Chose a number: ");
@@ -73,6 +74,29 @@ public class Main {
         System.out.print("Enter the ID of the creature you want to display: ");
         int searchId = Integer.parseInt(scanner.nextLine());
         Creature.displayCreatureById(creatures, searchId);
+        break;
+
+      case "4":
+        System.out.print("Even or odd (e/o)?");
+        String choice = scanner.nextLine().toLowerCase();
+
+        if (choice.equals("e")) {
+          System.out.println("Displaying creatures with even IDs:");
+          for (Creature creature : creatures) {
+            if (creature.getId() % 2 == 0) {
+              creature.displayAllCreatureDetails();
+            }
+          }
+        } else if (choice.equals("o")) {
+          System.out.println("Displaying creatures with odd IDs:");
+          for (Creature creature : creatures) {
+            if (creature.getId() % 2 != 0) {
+              creature.displayAllCreatureDetails();
+            }
+          }
+        } else {
+          System.out.println("Invalid choice. Please select 'e' for even or 'o' for odd.");
+        }
         break;
 
       case "0":

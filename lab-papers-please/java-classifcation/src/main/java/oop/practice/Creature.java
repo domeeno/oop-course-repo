@@ -47,6 +47,7 @@ public class Creature {
   public List<String> getTraits() {
     return traits;
   }
+
   public void displayAllCreatureDetails() {
     System.out.println("ID: " + id);
     System.out.println("Is Humanoid: " + isHumanoid);
@@ -135,4 +136,5 @@ public class Creature {
     }
     System.out.println("No creature found with ID: " + searchId);
   }
+
 }
