@@ -1,0 +1,15 @@
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-papers-please\cs-classifcation\obj\Debug\net8.0\cs-classifcation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-papers-please\cs-classifcation\obj\Debug\net8.0\cs-classifcation.AssemblyInfoInputs.cache
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-papers-please\cs-classifcation\obj\Debug\net8.0\cs-classifcation.AssemblyInfo.cs
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-papers-please\cs-classifcation\obj\Debug\net8.0\cs-classifcation.csproj.CoreCompileInputs.cache
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-papers-please\cs-classifcation\obj\Debug\net8.0\cs-classifcation.sourcelink.json
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-papers-please\cs-classifcation\bin\Debug\net8.0\cs-classifcation.exe
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-papers-please\cs-classifcation\bin\Debug\net8.0\cs-classifcation.deps.json
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-papers-please\cs-classifcation\bin\Debug\net8.0\cs-classifcation.runtimeconfig.json
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-papers-please\cs-classifcation\bin\Debug\net8.0\cs-classifcation.dll
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-papers-please\cs-classifcation\bin\Debug\net8.0\cs-classifcation.pdb
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-papers-please\cs-classifcation\obj\Debug\net8.0\cs-classifcation.dll
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-papers-please\cs-classifcation\obj\Debug\net8.0\refint\cs-classifcation.dll
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-papers-please\cs-classifcation\obj\Debug\net8.0\cs-classifcation.pdb
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-papers-please\cs-classifcation\obj\Debug\net8.0\cs-classifcation.genruntimeconfig.cache
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-papers-please\cs-classifcation\obj\Debug\net8.0\ref\cs-classifcation.dll
