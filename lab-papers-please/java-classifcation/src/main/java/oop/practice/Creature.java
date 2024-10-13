@@ -82,6 +82,7 @@ public class Creature {
       List<String> traits = new ArrayList<>();
       System.out.println("Enter traits (separate by commas, leave blank if none):");
       String traitsInput = scanner.nextLine();
+
       if (!traitsInput.isEmpty()) {
         String[] traitsArray = traitsInput.split(",");
         for (String trait : traitsArray) {

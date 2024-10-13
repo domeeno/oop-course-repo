@@ -86,8 +86,6 @@ public class Main {
     mapper.writeValue(new File("src/main/resources/output/rings.json"), rings);
     mapper.writeValue(new File("src/main/resources/output/marvel.json"), marvel);
 
-
-
   }
 };
 record Universe(
