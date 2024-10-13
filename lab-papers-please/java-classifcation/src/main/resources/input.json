@@ -183,6 +183,36 @@
         "EXTRA_ARMS",
         "EXTRA_HEAD"
       ]
+    },
+    {
+      "id": 22,
+      "isHumanoid": true,
+      "planet": "Middle-Earth",
+      "age": 90,
+      "traits": [
+        "ELVEN",
+        "ARCHERY"
+      ]
+    },
+    {
+      "id": 23,
+      "isHumanoid": false,
+      "planet": "Mordor",
+      "age": 1500,
+      "traits": [
+        "ORC",
+        "BRUTAL"
+      ]
+    },
+    {
+      "id": 24,
+      "isHumanoid": true,
+      "planet": "Gondor",
+      "age": 65,
+      "traits": [
+        "HUMAN",
+        "SWORD_FIGHTER"
+      ]
     }
   ]
 }
