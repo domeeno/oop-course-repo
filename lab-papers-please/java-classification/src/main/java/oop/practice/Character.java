@@ -1,16 +1,23 @@
 package oop.practice;
 
-import java.util.List;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
+import java.util.List;
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Character {
+    @JsonProperty("id")
     private int id;
-    private Boolean isHumanoid;
+    @JsonProperty("isHumanoid")
+    private boolean isHumanoid;
+    @JsonProperty("planet")
     private String planet;
-    private Integer age;
+    @JsonProperty("age")
+    private int age;
+    @JsonProperty("traits")
     private List<String> traits;
 
-    // Constructor
-    public Character(int id, Boolean isHumanoid, String planet, Integer age, List<String> traits) {
+    public Character(int id, boolean isHumanoid, String planet, int age, List<String> traits) {
         this.id = id;
         this.isHumanoid = isHumanoid;
         this.planet = planet;
@@ -18,10 +25,8 @@ public class Character {
         this.traits = traits;
     }
 
-    // Default Constructor
     public Character() {}
 
-    // Getters and Setters
     public int getId() {
         return id;
     }
@@ -30,7 +35,7 @@ public class Character {
         this.id = id;
     }
 
-    public Boolean getIsHumanoid() {
+    public boolean getIsHumanoid() {
         return isHumanoid;
     }
 
@@ -46,7 +51,7 @@ public class Character {
         this.planet = planet;
     }
 
-    public Integer getAge() {
+    public int getAge() {
         return age;
     }
 
@@ -62,7 +67,6 @@ public class Character {
         this.traits = traits;
     }
 
-    // toString method for displaying character details
     @Override
     public String toString() {
         return "Character{" +
