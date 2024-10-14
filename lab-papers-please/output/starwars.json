@@ -1,11 +1,12 @@
 {
-  "name": "starwars",
+  "name": "starWars",
   "individuals": [
     {
-      "id": 1,
-      "isHumanoid": false,
+      "id": "1",
       "planet": "Endor",
-      "age": 22
+      "traits": null,
+      "age": 22,
+      "isHumanoid": false
     }
   ]
 }

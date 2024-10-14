@@ -1,1 +1,12 @@
-{"name":"rings","individuals":[{"id":3,"isHumanoid":true,"age":7523}]}
+{
+  "name": "rings",
+  "individuals": [
+    {
+      "id": "3",
+      "planet": null,
+      "traits": null,
+      "age": 7523,
+      "isHumanoid": true
+    }
+  ]
+}

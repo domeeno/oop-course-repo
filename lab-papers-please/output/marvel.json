@@ -1,1 +1,15 @@
-{"name":"starwars","individuals":[{"id":1,"isHumanoid":false,"planet":"Endor","age":22}]}
+{
+  "name": "marvel",
+  "individuals": [
+    {
+      "id": "0",
+      "planet": "Asgard",
+      "traits": [
+        "BLONDE",
+        "TALL"
+      ],
+      "age": 2034,
+      "isHumanoid": true
+    }
+  ]
+}

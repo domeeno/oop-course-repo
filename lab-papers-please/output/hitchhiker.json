@@ -2,26 +2,31 @@
   "name": "hitchHiker",
   "individuals": [
     {
-      "id": 2,
-      "isHumanoid": false,
-      "age": 128,
+      "id": "2",
+      "planet": null,
       "traits": [
         "GREEN"
-      ]
+      ],
+      "age": 128,
+      "isHumanoid": false
     },
     {
-      "id": 4,
-      "age": 26,
+      "id": "4",
+      "planet": null,
       "traits": [
         "EXTRA_ARMS"
-      ]
+      ],
+      "age": 26,
+      "isHumanoid": null
     },
     {
-      "id": 5,
-      "isHumanoid": false,
+      "id": "5",
+      "planet": null,
       "traits": [
         "BULKY"
-      ]
+      ],
+      "age": null,
+      "isHumanoid": false
     }
   ]
 }
