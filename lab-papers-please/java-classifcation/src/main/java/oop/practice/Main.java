@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -12,8 +13,14 @@ import java.util.Scanner;
 public class Main {
   public static void main(String[] args) throws IOException {
     ObjectMapper mapper = new ObjectMapper();
-    File inputFile = new File("src/main/resources/test-input.json");
-    JsonNode data = mapper.readTree(inputFile).get("data");
+
+    // Use ClassLoader to load resource
+    InputStream inputStream = Main.class.getClassLoader().getResourceAsStream("test-input.json");
+    if (inputStream == null) {
+      throw new IOException("Resource not found: test-input.json");
+    }
+
+    JsonNode data = mapper.readTree(inputStream).get("data");
 
     Universe starWars = new Universe("starWars", new ArrayList<>());
     Universe hitchhikers = new Universe("hitchHiker", new ArrayList<>());
@@ -45,6 +52,11 @@ public class Main {
     }
 
     scanner.close();
+
+    // Ensure output directory exists
+    new File("src/main/resources/output").mkdirs();
+
+    // Write output to files
     mapper.writeValue(new File("src/main/resources/output/starwars.json"), starWars);
     mapper.writeValue(new File("src/main/resources/output/hitchhiker.json"), hitchhikers);
     mapper.writeValue(new File("src/main/resources/output/rings.json"), rings);
@@ -52,7 +64,4 @@ public class Main {
   }
 }
 
-record Universe(
-    String name,
-    List<JsonNode> individuals
-) { }
+record Universe(String name, List<JsonNode> individuals) { }
