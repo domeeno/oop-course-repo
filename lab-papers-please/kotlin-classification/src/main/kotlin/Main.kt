@@ -2,37 +2,45 @@ package oop.practice
 
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.ObjectMapper
-import kotlinx.serialization.Contextual
-import kotlinx.serialization.Serializable
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import java.io.File
 
 fun main() {
-  val objectMapper = ObjectMapper()
+  val objectMapper = jacksonObjectMapper()
   val input = objectMapper.readTree(File("src/main/resources/test-input.json"))
   val data = input["data"]
 
-  val starWars = Universe("starWars", mutableListOf())
-  val hitchHiker = Universe("hitchHiker", mutableListOf())
-  val rings = Universe("rings", mutableListOf())
-  val marvel = Universe("marvel", mutableListOf())
+  val universes = buildList {
+    add(Universe("starWars", mutableListOf()))
+    add(Universe("hitchHiker", mutableListOf()))
+    add(Universe("rings", mutableListOf()))
+    add(Universe("marvel", mutableListOf()))
+  }
 
-  data.forEach {
-    val node = it
+  universes.forEachIndexed(::printUniverse)
+
+  data.forEach { node ->
     println(node)
-
     when (readlnOrNull()) {
-      "1" -> starWars.individuals.add(node)
-      "2" -> hitchHiker.individuals.add(node)
-      "3" -> rings.individuals.add(node)
-      "4" -> marvel.individuals.add(node)
+      "1" -> universes[0].individuals.add(node)
+      "2" -> universes[1].individuals.add(node)
+      "3" -> universes[2].individuals.add(node)
+      "4" -> universes[3].individuals.add(node)
     }
   }
 
-  File("src/main/resources/output/starwars.json").writeText(objectMapper.writeValueAsString(starWars))
-  File("src/main/resources/output/hitchhiker.json").writeText(objectMapper.writeValueAsString(hitchHiker))
-  File("src/main/resources/output/rings.json").writeText(objectMapper.writeValueAsString(rings))
-  File("src/main/resources/output/marvel.json").writeText(objectMapper.writeValueAsString(starWars))
+  universes.forEach { universe ->
+    universeToFileOutput(universe, objectMapper)
+  }
 }
+
+fun printUniverse(index: Int, universe: Universe) {
+  println("${1 + index}: ${universe.name}")
+}
+
+fun universeToFileOutput(universe: Universe, objectMapper: ObjectMapper) =
+  File("src/main/resources/output/${universe.name}.json")
+    .writeText(objectMapper.writeValueAsString(universe))
 
 data class Universe(
   val name: String,
