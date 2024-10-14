@@ -1,65 +1,67 @@
 package oop.practice;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.List;
 
 public class Main {
   public static void main(String[] args) throws IOException {
     ObjectMapper mapper = new ObjectMapper();
-
-    // Use ClassLoader to load resource
-    InputStream inputStream = Main.class.getClassLoader().getResourceAsStream("test-input.json");
-    if (inputStream == null) {
-      throw new IOException("Resource not found: test-input.json");
-    }
-
-    JsonNode data = mapper.readTree(inputStream).get("data");
+    File inputFile = new File("lab-papers-please/java-classifcation/src/main/resources/input.json");
+    JsonNode data = mapper.readTree(inputFile).get("data");
 
     Universe starWars = new Universe("starWars", new ArrayList<>());
     Universe hitchhikers = new Universe("hitchHiker", new ArrayList<>());
     Universe marvel = new Universe("marvel", new ArrayList<>());
     Universe rings = new Universe("rings", new ArrayList<>());
 
-    Scanner scanner = new Scanner(System.in);
+    List<Individual> individualsList = mapper.readValue(data.toString(), new TypeReference<>() {
+    });
 
-    for (JsonNode entry : data) {
-      String entryAsString = entry.toString();
-      System.out.println(entryAsString);
-      String userInput = scanner.nextLine();
-      switch (userInput) {
-        case "1":
-          starWars.individuals().add(entry);
+    for (Individual individual : individualsList) {
+      JsonNode jsonNode = mapper.valueToTree(individual);
+      switch (Classification.getClassification(individual)) {
+        case 1:
+
+          starWars.individuals().add(jsonNode);
           break;
-        case "2":
-          hitchhikers.individuals().add(entry);
+        case 2:
+          marvel.individuals().add(jsonNode);
           break;
-        case "3":
-          marvel.individuals().add(entry);
+        case 3:
+          hitchhikers.individuals().add(jsonNode);
           break;
-        case "4":
-          rings.individuals().add(entry);
+        case 4:
+          rings.individuals().add(jsonNode);
           break;
         default:
-          System.out.println("Invalid input");
+          System.out.println("Something went wrong for id: " + individual.getId());
       }
     }
 
-    scanner.close();
 
-    // Ensure output directory exists
-    new File("src/main/resources/output").mkdirs();
+    mapper.writeValue(new File("/Users/cristianbulat/IdeaProjects/oop-laboratory1/lab-papers-please/java-classifcation/src/main/resources/output/starwars.json"), starWars);
+    mapper.writeValue(new File("/Users/cristianbulat/IdeaProjects/oop-laboratory1/lab-papers-please/java-classifcation/src/main/resources/output/hitchhiker.json"), hitchhikers);
+    mapper.writeValue(new File("/Users/cristianbulat/IdeaProjects/oop-laboratory1/lab-papers-please/java-classifcation/src/main/resources/output/rings.json"), rings);
+    mapper.writeValue(new File("/Users/cristianbulat/IdeaProjects/oop-laboratory1/lab-papers-please/java-classifcation/src/main/resources/output/marvel.json"), marvel);
 
-    // Write output to files
-    mapper.writeValue(new File("src/main/resources/output/starwars.json"), starWars);
-    mapper.writeValue(new File("src/main/resources/output/hitchhiker.json"), hitchhikers);
-    mapper.writeValue(new File("src/main/resources/output/rings.json"), rings);
-    mapper.writeValue(new File("src/main/resources/output/marvel.json"), marvel);
+    System.out.println("\n");
+    ViewOutput.showStarWars();
+    System.out.println("\n");
+    ViewOutput.showHitchhiker();
+    System.out.println("\n");
+    ViewOutput.showMarvel();
+    System.out.println("\n");
+    ViewOutput.showRings();
   }
 }
 
+record Universe(
+        String name,
+        List<JsonNode> individuals
+) { }
