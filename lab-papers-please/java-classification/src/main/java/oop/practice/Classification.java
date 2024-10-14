@@ -11,11 +11,11 @@ public class Classification {
         List<String> traits = individuals.getTraits();
 
         // Print out the current values for debugging
-        System.out.println(" ID:" + individuals.getId() + "\n{" +
-                "\nisHumanoid=" + isHumanoid +
-                "\nplanet='" + planet + '\'' +
-                "\nage=" + age +
-                "\ntraits=" + traits);
+//        System.out.println(" ID:" + individuals.getId() + "\n{" +
+//                "\nisHumanoid=" + isHumanoid +
+//                "\nplanet='" + planet + '\'' +
+//                "\nage=" + age +
+//                "\ntraits=" + traits);
 
 
 

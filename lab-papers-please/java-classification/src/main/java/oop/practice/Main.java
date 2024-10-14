@@ -46,11 +46,11 @@ public class Main {
 //    }
     Scanner scanner = new Scanner(System.in);
 
-    for(JsonNode entry : data){
-
-      FilePrint.printEntry(entry);
-
-    }
+//    for(JsonNode entry : data){
+//
+//      FilePrint.printEntry(entry);
+//
+//    }
 
     for (Character individuals : charactersList) {
 
@@ -77,6 +77,18 @@ public class Main {
     mapper.writeValue(new File("./lab-papers-please/output/hitchhiker.json"), hitchhikers);
     mapper.writeValue(new File("./lab-papers-please/output/rings.json"), rings);
     mapper.writeValue(new File("./lab-papers-please/output/marvel.json"), marvel);
+
+    System.out.println("\n");
+    View.showStarWars();
+
+    System.out.println("\n");
+    View.showHitchhiker();
+
+    System.out.println("\n");
+    View.showMarvel();
+
+    System.out.println("\n");
+    View.showRings();
   }
 }
 
