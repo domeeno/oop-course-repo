@@ -10,7 +10,7 @@ namespace Csharp
         {
 
             string baseDir = AppContext.BaseDirectory;
-            var inputFile = Path.Combine(baseDir, "resources", "input", "test-input.json");
+            var inputFile = Path.Combine(baseDir, "..", "..", "..", "..", "resources", "input", "test-input.json");
 
             var jsonData = File.ReadAllText(inputFile);
             var data = JsonNode.Parse(jsonData)?["data"]?.AsArray();
@@ -57,7 +57,7 @@ namespace Csharp
                 WriteIndented = true
             };
 
-            var outputDirectory = Path.Combine(baseDir, "resources", "output");
+            var outputDirectory = Path.Combine(baseDir, "..", "..", "..", "..", "resources", "output");
           
             File.WriteAllText(Path.Combine(outputDirectory, "starwars.json"), JsonSerializer.Serialize(starWars, options));
             File.WriteAllText(Path.Combine(outputDirectory, "hitchhiker.json"), JsonSerializer.Serialize(hitchHiker, options));
