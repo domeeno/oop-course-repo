@@ -1,0 +1,48 @@
+[
+  {
+    "Id": 4,
+    "Planet": "Earth",
+    "IsHumanoid": null,
+    "Age": null,
+    "Traits": [
+      "SHORT",
+      "BULKY"
+    ]
+  },
+  {
+    "Id": 5,
+    "Planet": "",
+    "IsHumanoid": true,
+    "Age": null,
+    "Traits": [
+      "BULKY"
+    ]
+  },
+  {
+    "Id": 9,
+    "Planet": "Earth",
+    "IsHumanoid": true,
+    "Age": 124.0,
+    "Traits": [
+      "SHORT",
+      "BULKY"
+    ]
+  },
+  {
+    "Id": 14,
+    "Planet": "",
+    "IsHumanoid": true,
+    "Age": 7523.0,
+    "Traits": []
+  },
+  {
+    "Id": 19,
+    "Planet": "Earth",
+    "IsHumanoid": true,
+    "Age": 451.0,
+    "Traits": [
+      "BLONDE",
+      "POINTY_EARS"
+    ]
+  }
+]
