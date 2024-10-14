@@ -58,6 +58,7 @@ public class Main {
     mapper.writeValue(new File("./lab-papers-please/output/rings.json"), rings);
     mapper.writeValue(new File("./lab-papers-please/output/marvel.json"), marvel);
 
+
     System.out.println("\n");
     View.showStarWars();
 
