@@ -1,1 +1,1 @@
-{"name":"marvel","individuals":[{"id":1,"isHumanoid":"FALSE","planet":"Endor","age":22},{"id":2,"isHumanoid":"FALSE","planet":"UNKNOWN","age":128,"traits":["GREEN"]},{"id":4,"isHumanoid":"UNKNOWN","planet":"UNKNOWN","age":26,"traits":["EXTRA_ARMS"]},{"id":5,"isHumanoid":"FALSE","planet":"UNKNOWN","age":0,"traits":["BULKY"]}]}
+{"name":"marvel","individuals":[{"id":7,"isHumanoid":"TRUE","planet":"Asgard","age":2034,"traits":["BLONDE","TALL"]},{"id":18,"isHumanoid":"TRUE","planet":"Asgard","age":0,"traits":["BLONDE","TALL"]}]}

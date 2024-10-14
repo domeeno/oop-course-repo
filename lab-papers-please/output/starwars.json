@@ -1,1 +1,1 @@
-{"name":"starWars","individuals":[]}
+{"name":"starWars","individuals":[{"id":0,"isHumanoid":"FALSE","planet":"Kashyyyk","age":253,"traits":["HAIRY","TALL"]},{"id":12,"isHumanoid":"FALSE","planet":"Endor","age":34,"traits":["HAIRY","SHORT"]}]}
