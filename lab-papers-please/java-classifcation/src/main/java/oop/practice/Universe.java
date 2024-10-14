@@ -23,4 +23,11 @@ public class Universe {
         return individuals;
     }
 
+    @Override
+    public String toString() {
+        return "Universe{" +
+                "name='" + name + '\n' +
+                ", individuals=" + individuals +
+                '}';
+    }
 }

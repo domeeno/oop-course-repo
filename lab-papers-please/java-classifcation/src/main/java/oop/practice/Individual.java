@@ -5,7 +5,7 @@ public class Individual {
     private String name;
     private boolean isHumanoid;
     private String planet;
-    private int age;
+    private Integer age;
     private List<String> traits;
 
     public Individual(String name, boolean isHumanoid, String planet, int age, List<String> traits){
@@ -28,11 +28,20 @@ public class Individual {
         return planet;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
     public List<String> getTraits() {
         return traits;
+    }
+
+    @Override
+    public String toString() {
+        return "Name: " + name + "\n" +
+                "isHumanoid: " + isHumanoid + "\n" +
+                "Planet: " + planet + "\n" +
+                "Age: " + age + "\n" +
+                "Traits: " + traits;
     }
 }
