@@ -24,9 +24,9 @@ public class Classification {
 
         // Handle Star Wars Classification
         if (isHumanoid == null || isHumanoid == BooleanState.FALSE) {
-            if ("Kashyyyk".equalsIgnoreCase(planet) && age > 0 && traits != null && traits.contains("HAIRY")) {
+            if ("Kashyyyk".equalsIgnoreCase(planet) && age > 0 && traits != null && traits.contains("HAIRY") && traits.contains("TALL")) {
                 return 1; // Wookie
-            } else if ("Endor".equalsIgnoreCase(planet) && age > 0 && traits != null && traits.contains("HAIRY")) {
+            } else if ("Endor".equalsIgnoreCase(planet) && age > 0 && traits != null && traits.contains("HAIRY") && traits.contains("SHORT")){
                 return 1; // Ewok
             }
         } else if (isHumanoid != null && isHumanoid == BooleanState.TRUE) {
