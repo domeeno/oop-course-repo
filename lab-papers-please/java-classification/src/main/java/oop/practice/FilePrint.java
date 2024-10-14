@@ -9,7 +9,7 @@ import java.io.IOException;
 public class FilePrint {
     public static void readAndPrint() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-        File inputFile = new File("src/main/resources/test-input.json");
+        File inputFile = new File("src/main/resources/input.json");
         JsonNode data = mapper.readTree(inputFile).get("data");
         for(JsonNode entry : data){
             printEntry(entry);
@@ -24,7 +24,7 @@ public class FilePrint {
         BooleanState isHumanoid = BooleanState.UNKNOWN;
 
         if (entry.has("isHumanoid")) {
-            isHumanoid = entry.get("isHumanoid").asBoolean() ? BooleanState.TRUE : BooleanState.FALSE;
+            isHumanoid = entry.get("isHumanoid").asText().equalsIgnoreCase("TRUE") ? BooleanState.TRUE : BooleanState.FALSE;
         }
 
         int age = entry.has("age") ? entry.get("age").asInt() : -1;
@@ -38,10 +38,6 @@ public class FilePrint {
         System.out.println("Traits: " + (traits != null ? traits : "UNKNOWN"));
 
     }
-
-
-
-
 }
 
 

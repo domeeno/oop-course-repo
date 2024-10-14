@@ -11,9 +11,6 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import java.io.IOException;
 import java.util.List;
 
-enum BooleanState {
-    TRUE, FALSE, UNKNOWN
-}
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Character {
@@ -34,18 +31,20 @@ public class Character {
     @JsonProperty("traits")
     private List<String> traits;
 
-    public Character(int id, boolean isHumanoid, String planet, int age, List<String> traits) {
+    public Character() {}
+
+    public Character(int id, boolean humanoid, String planet, int age, List<String> traits) {
         this.id = id;
-        if(isHumanoid){
+        if(humanoid){
             this.isHumanoid = BooleanState.TRUE;
-        } else if (isHumanoid) {
+        } else if (!humanoid) {
             this.isHumanoid = BooleanState.FALSE;
-        }        this.planet = planet;
+        }
+        this.planet = planet;
         this.age = age;
         this.traits = traits;
     }
 
-    public Character() {}
 
     // Getters and Setters
     public int getId() {
@@ -60,8 +59,8 @@ public class Character {
         return isHumanoid;
     }
 
-    public void setIsHumanoid(BooleanState isHumanoid) {
-        this.isHumanoid = isHumanoid;
+    public void setIsHumanoid(BooleanState humanoid) {
+        isHumanoid = humanoid;
     }
 
     public String getPlanet() {
