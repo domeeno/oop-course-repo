@@ -40,10 +40,10 @@ public class Main {
           starWars.individuals().add(entry);
           break;
         case 2:
-          hitchhikers.individuals().add(entry);
+          marvel.individuals().add(entry);
           break;
         case 3:
-          marvel.individuals().add(entry);
+          hitchhikers.individuals().add(entry);
           break;
         case 4:
           rings.individuals().add(entry);

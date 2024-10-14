@@ -10,62 +10,65 @@ public class Classification {
         int age = individuals.getAge();
         List<String> traits = individuals.getTraits();
 
-        // Star Wars Universe Classification
-        if (isHumanoid == BooleanState.FALSE) {
-            if ("Kashyyyk".equalsIgnoreCase(planet) && ageInRange(age, 0, 400) && containsTraits(traits, "HAIRY", "TALL")) {
+        // Handle Star Wars Classification
+        if (isHumanoid == null || isHumanoid == BooleanState.FALSE) {
+            if (planet != null && planet.equalsIgnoreCase("Kashyyyk") && age > 0 && traits != null && traits.contains("HAIRY")) {
                 return 1; // Wookie
-            } else if ("Endor".equalsIgnoreCase(planet) && ageInRange(age, 0, 60) && containsTraits(traits, "SHORT", "HAIRY")) {
+            } else if (planet != null && planet.equalsIgnoreCase("Endor") && age > 0 && traits != null && traits.contains("HAIRY")) {
                 return 1; // Ewok
             }
         }
 
-        // Marvel Universe Classification
-        if (isHumanoid == BooleanState.TRUE) {
-            if ("Asgard".equalsIgnoreCase(planet) && ageInRange(age, 0, 5000) && containsTraits(traits, "BLONDE", "TALL")) {
-                return 3; // Asgardian
+        // Handle Marvel Universe
+        if (isHumanoid != null && isHumanoid == BooleanState.TRUE) {
+            if (planet != null && planet.equalsIgnoreCase("Asgard") && age > 0 && traits != null && traits.contains("BLONDE")) {
+                return 2; // Asgardian
             }
         }
 
-        // Hitchhiker's Guide to the Galaxy Universe Classification
-        if (isHumanoid == BooleanState.TRUE) {
-            if ("Betelgeuse".equalsIgnoreCase(planet) && ageInRange(age, 0, 100) && containsTraits(traits, "EXTRA_ARMS", "EXTRA_HEAD")) {
-                return 2; // Betelgeusian
-            }
-        }
-        if (isHumanoid == BooleanState.FALSE) {
-            if ("Vogsphere".equalsIgnoreCase(planet) && ageInRange(age, 0, 200) && containsTraits(traits, "GREEN", "BULKY")) {
-                return 2; // Vogon
-            }
+        // Handle Hitchhiker's Guide Universe
+        if (planet != null && planet.equalsIgnoreCase("Betelgeuse") && age > 0 && traits != null &&
+                (traits.contains("EXTRA_ARMS") || traits.contains("EXTRA_HEAD"))) {
+            return 3; // Betelgeusian
         }
 
-        // Lord of the Rings Universe Classification
-        if (isHumanoid == BooleanState.TRUE) {
-            if ("Earth".equalsIgnoreCase(planet) && containsTraits(traits, "BLONDE", "POINTY_EARS")) {
-                return 4; // Elf
-            } else if ("Earth".equalsIgnoreCase(planet) && ageInRange(age, 0, 200) && containsTraits(traits, "SHORT", "BULKY")) {
-                return 4; // Dwarf
+        // Handle Lord of the Rings Universe
+        if (planet != null && planet.equalsIgnoreCase("Earth")) {
+            if (traits != null) {
+                if (traits.contains("BLONDE") && traits.contains("POINTY_EARS")) {
+                    return 4; // Elf
+                } else if (traits.contains("SHORT") && traits.contains("BULKY")) {
+                    return 4; // Dwarf
+                }
             }
         }
 
-        // Default case for unidentified characters
-        return -1; // Unclassified or unknown
-    }
-
-    // Utility method to check if the age falls within a certain range
-    private static boolean ageInRange(int age, int min, int max) {
-        return age >= min && age <= max;
-    }
-
-    // Utility method to check if the traits list contains all specified traits
-    private static boolean containsTraits(List<String> traits, String... requiredTraits) {
-        if (traits == null) {
-            return false;
-        }
-        for (String trait : requiredTraits) {
-            if (!traits.contains(trait)) {
-                return false;
+        // Handle unknown planets with traits
+        if (planet == null || planet.equalsIgnoreCase("UNKNOWN")) {
+            if (isHumanoid == BooleanState.FALSE && age > 0 && traits != null && traits.contains("BULKY")) {
+                return 3; // Vogon (likely from Vogsphere)
             }
         }
-        return true;
+
+        // Default classification for certain traits
+        if (traits != null) {
+            if (traits.contains("GREEN") && (isHumanoid == null || isHumanoid == BooleanState.FALSE)) {
+                return 3; // Vogon
+            } else if (traits.contains("HAIRY") && age > 0) {
+                return 1; // General classification for hairy beings
+            }
+        }
+
+        // Default to humanoid classification
+        if (isHumanoid != null) {
+            if (isHumanoid == BooleanState.TRUE) {
+                return 2; // Default to Asgardian for humanoids
+            } else {
+                return 3; // Default to Vogon for non-humanoids
+            }
+        }
+
+        // If still no classification, return -1 (as a catch-all for unspecified)
+        return -1; // Unspecified fallback
     }
 }
