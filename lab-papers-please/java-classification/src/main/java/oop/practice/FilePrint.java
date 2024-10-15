@@ -23,20 +23,16 @@ public class FilePrint {
 
         BooleanState isHumanoid = BooleanState.UNKNOWN;
 
-        if (entry.has("isHumanoid")) {
-            isHumanoid = entry.get("isHumanoid").asText().equalsIgnoreCase("TRUE") ? BooleanState.TRUE : BooleanState.FALSE;
-        }
-
         int age = entry.has("age") ? entry.get("age").asInt() : -1;
 
         JsonNode traits = entry.has("traits") ? entry.get("traits") : null;
         System.out.println("\n");
         System.out.println("ID: " + id);
-        System.out.println("Is Humanoid: " + isHumanoid);
+        System.out.println("Is Humanoid: " + entry.get("isHumanoid").asText());
         System.out.println("Planet: " + planet);
         System.out.println("Age: " + (age > 0 ? age : "UNKNOWN"));
         System.out.println("Traits: " + (traits != null ? traits : "UNKNOWN"));
-
+        System.out.println("\n");
     }
 }
 
