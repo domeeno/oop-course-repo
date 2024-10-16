@@ -8,11 +8,21 @@ using json = nlohmann::json;
 using namespace std;
 
 class Universe {
-public:
+private:
     string name;
     vector<json> individuals;
-
+public:
     Universe(const string& name) : name(name) {}
+    void setIndividuals(json individual){
+        individuals.push_back(individual);
+    }
+    auto getIndividuals(){
+        return individuals;
+    }
+
+    string getName(){
+        return name;
+    }
 };
 
 int main() {
@@ -37,13 +47,13 @@ int main() {
         cin >> userInput;
 
         if (userInput == "1") {
-            starWars.individuals.push_back(entry);
+            starWars.setIndividuals(entry);
         } else if (userInput == "2") {
-            hitchhikers.individuals.push_back(entry);
+            hitchhikers.setIndividuals(entry);
         } else if (userInput == "3") {
-            marvel.individuals.push_back(entry);
+            marvel.setIndividuals(entry);
         } else if (userInput == "4") {
-            rings.individuals.push_back(entry);
+            rings.setIndividuals(entry);
         } else {
             cout << "Invalid input" << endl;
         }
@@ -53,11 +63,10 @@ int main() {
     ofstream outHitchhikers("../resources/output/hitch-hiker.json");
     ofstream outMarvel("../resources/output/marvel.json");
     ofstream outRings("../resources/output/rings.json");
-
-    outStarWars << json({{"name", starWars.name}, {"individuals", starWars.individuals}}).dump(4);
-    outHitchhikers << json({{"name", hitchhikers.name}, {"individuals", hitchhikers.individuals}}).dump(4);
-    outMarvel << json({{"name", marvel.name}, {"individuals", marvel.individuals}}).dump(4);
-    outRings << json({{"name", rings.name}, {"individuals", rings.individuals}}).dump(4);
+    outStarWars << json({{"name", starWars.getName()}, {"individuals", starWars.getIndividuals()}}).dump(4);
+    outHitchhikers << json({{"name", hitchhikers.getName()}, {"individuals", hitchhikers.getIndividuals()}}).dump(4);
+    outMarvel << json({{"name", marvel.getName()}, {"individuals", marvel.getIndividuals()}}).dump(4);
+    outRings << json({{"name", rings.getName()}, {"individuals", rings.getIndividuals()}}).dump(4);
 
     cout << "Success! Files have been written." << endl;
     return 0;
