@@ -42,6 +42,36 @@
       "traits": [
         "BULKY"
       ]
+    },
+    {
+      "id": 6,
+      "planet": "Middle-Earth",
+      "age": 90,
+      "traits": [
+        "ELVEN",
+        "ARCHERY"
+      ],
+      "isHumanoid": true
+    },
+    {
+      "id": 7,
+      "planet": "Mordor",
+      "age": 1500,
+      "traits": [
+        "ORC",
+        "BRUTAL"
+      ],
+      "isHumanoid": false
+    },
+    {
+      "id": 8,
+      "planet": "Gondor",
+      "age": 65,
+      "traits": [
+        "HUMAN",
+        "SWORD_FIGHTER"
+      ],
+      "isHumanoid": true
     }
   ]
 }
