@@ -1,0 +1,15 @@
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-Class-and-Objects-galore\Task3\obj\Debug\net8.0\Task3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-Class-and-Objects-galore\Task3\obj\Debug\net8.0\Task3.AssemblyInfoInputs.cache
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-Class-and-Objects-galore\Task3\obj\Debug\net8.0\Task3.AssemblyInfo.cs
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-Class-and-Objects-galore\Task3\obj\Debug\net8.0\Task3.csproj.CoreCompileInputs.cache
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-Class-and-Objects-galore\Task3\obj\Debug\net8.0\Task3.sourcelink.json
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-Class-and-Objects-galore\Task3\bin\Debug\net8.0\Task3.exe
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-Class-and-Objects-galore\Task3\bin\Debug\net8.0\Task3.deps.json
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-Class-and-Objects-galore\Task3\bin\Debug\net8.0\Task3.runtimeconfig.json
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-Class-and-Objects-galore\Task3\bin\Debug\net8.0\Task3.dll
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-Class-and-Objects-galore\Task3\bin\Debug\net8.0\Task3.pdb
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-Class-and-Objects-galore\Task3\obj\Debug\net8.0\Task3.dll
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-Class-and-Objects-galore\Task3\obj\Debug\net8.0\refint\Task3.dll
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-Class-and-Objects-galore\Task3\obj\Debug\net8.0\Task3.pdb
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-Class-and-Objects-galore\Task3\obj\Debug\net8.0\Task3.genruntimeconfig.cache
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-Class-and-Objects-galore\Task3\obj\Debug\net8.0\ref\Task3.dll
