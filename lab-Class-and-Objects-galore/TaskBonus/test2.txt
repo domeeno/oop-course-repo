@@ -1,0 +1,3 @@
+The quick brown fox jumps over the lazy dog. This is a test file used to evaluate text processing functionality.
+It includes several sentences, varying in length and structure. 
+How many vowels and consonants can you find in this file? Let's check the longest word, which is "functionality" in this case!
