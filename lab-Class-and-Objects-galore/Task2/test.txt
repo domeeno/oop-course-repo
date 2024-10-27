@@ -1,0 +1,6 @@
+Hello, welcome to the world of programming!
+Learning C# can be both challenging and rewarding. 
+
+It’s essential to practice consistently to improve.
+How long can you make the longest word?
+Let's find out together!
