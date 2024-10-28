@@ -26,12 +26,6 @@ public class Main {
 
     Scanner scanner = new Scanner(System.in);
 
-//    for(JsonNode entry : data){
-//
-//      FilePrint.printEntry(entry);
-//
-//    }
-
     for (Character individuals : charactersList) {
 
       JsonNode entry = mapper.valueToTree(individuals);
@@ -60,16 +54,16 @@ public class Main {
 
 
     System.out.println("\n");
-    View.showStarWars();
+    View.showStarWars("./lab-papers-please/output/starwars.json");
 
     System.out.println("\n");
-    View.showHitchhiker();
+    View.showHitchhiker("./lab-papers-please/output/hitchhiker.json");
 
     System.out.println("\n");
-    View.showMarvel();
+    View.showMarvel("./lab-papers-please/output/rings.json");
 
     System.out.println("\n");
-    View.showRings();
+    View.showRings("./lab-papers-please/output/marvel.json");
   }
 }
 

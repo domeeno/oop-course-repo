@@ -32,7 +32,6 @@ public class FilePrint {
         System.out.println("Planet: " + planet);
         System.out.println("Age: " + (age > 0 ? age : "UNKNOWN"));
         System.out.println("Traits: " + (traits != null ? traits : "UNKNOWN"));
-        System.out.println("\n");
     }
 }
 
