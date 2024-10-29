@@ -10,6 +10,34 @@ public class TextData {
     private int numberOfSentences;
     private String longestWord;
 
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public void setNumberOfVowels(int numberOfVowels) {
+        this.numberOfVowels = numberOfVowels;
+    }
+
+    public void setNumberOfConsonants(int numberOfConsonants) {
+        this.numberOfConsonants = numberOfConsonants;
+    }
+
+    public void setNumberOfLetters(int numberOfLetters) {
+        this.numberOfLetters = numberOfLetters;
+    }
+
+    public void setNumberOfSentences(int numberOfSentences) {
+        this.numberOfSentences = numberOfSentences;
+    }
+
+    public void setLongestWord(String longestWord) {
+        this.longestWord = longestWord;
+    }
+
     public TextData(String fileName, String text) {
         this.fileName = fileName;
         this.text = text;
