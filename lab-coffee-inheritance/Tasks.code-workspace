@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "Task1",
+			"path": "Task1"
+		},
+		{
+			"name": "Task2",
+			"path": "Task2"
+		},
+		{
+			"name": "Task3",
+			"path": "Task3"
+		}
+	],
+	"settings": {},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": []
+	}
+}
