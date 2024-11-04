@@ -1,0 +1,15 @@
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task2\obj\Debug\net8.0\Task2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task2\obj\Debug\net8.0\Task2.AssemblyInfoInputs.cache
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task2\obj\Debug\net8.0\Task2.AssemblyInfo.cs
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task2\obj\Debug\net8.0\Task2.csproj.CoreCompileInputs.cache
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task2\obj\Debug\net8.0\Task2.sourcelink.json
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task2\bin\Debug\net8.0\Task2.exe
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task2\bin\Debug\net8.0\Task2.deps.json
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task2\bin\Debug\net8.0\Task2.runtimeconfig.json
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task2\bin\Debug\net8.0\Task2.dll
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task2\bin\Debug\net8.0\Task2.pdb
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task2\obj\Debug\net8.0\Task2.dll
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task2\obj\Debug\net8.0\refint\Task2.dll
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task2\obj\Debug\net8.0\Task2.pdb
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task2\obj\Debug\net8.0\Task2.genruntimeconfig.cache
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task2\obj\Debug\net8.0\ref\Task2.dll

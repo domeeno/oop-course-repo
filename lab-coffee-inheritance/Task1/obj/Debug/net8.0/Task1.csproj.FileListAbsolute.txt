@@ -1,0 +1,5 @@
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task1\obj\Debug\net8.0\Task1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task1\obj\Debug\net8.0\Task1.AssemblyInfoInputs.cache
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task1\obj\Debug\net8.0\Task1.AssemblyInfo.cs
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task1\obj\Debug\net8.0\Task1.csproj.CoreCompileInputs.cache
+C:\Sandu\Uni\II\OOP\oop-course-repo\lab-coffee-inheritance\Task1\obj\Debug\net8.0\Task1.sourcelink.json
