@@ -11,6 +11,10 @@
 		{
 			"name": "Task3",
 			"path": "Task3"
+		},
+		{
+			"name": "Task4",
+			"path": "Task4"
 		}
 	],
 	"settings": {},

@@ -1,0 +1,12 @@
+C:\Sandu\Uni\II\OOP\oop-course-repo\Task4\CoffeeLibrary\obj\Debug\net8.0\CoffeeLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sandu\Uni\II\OOP\oop-course-repo\Task4\CoffeeLibrary\obj\Debug\net8.0\CoffeeLibrary.AssemblyInfoInputs.cache
+C:\Sandu\Uni\II\OOP\oop-course-repo\Task4\CoffeeLibrary\obj\Debug\net8.0\CoffeeLibrary.AssemblyInfo.cs
+C:\Sandu\Uni\II\OOP\oop-course-repo\Task4\CoffeeLibrary\obj\Debug\net8.0\CoffeeLibrary.csproj.CoreCompileInputs.cache
+C:\Sandu\Uni\II\OOP\oop-course-repo\Task4\CoffeeLibrary\obj\Debug\net8.0\CoffeeLibrary.sourcelink.json
+C:\Sandu\Uni\II\OOP\oop-course-repo\Task4\CoffeeLibrary\bin\Debug\net8.0\CoffeeLibrary.deps.json
+C:\Sandu\Uni\II\OOP\oop-course-repo\Task4\CoffeeLibrary\bin\Debug\net8.0\CoffeeLibrary.dll
+C:\Sandu\Uni\II\OOP\oop-course-repo\Task4\CoffeeLibrary\bin\Debug\net8.0\CoffeeLibrary.pdb
+C:\Sandu\Uni\II\OOP\oop-course-repo\Task4\CoffeeLibrary\obj\Debug\net8.0\CoffeeLibrary.dll
+C:\Sandu\Uni\II\OOP\oop-course-repo\Task4\CoffeeLibrary\obj\Debug\net8.0\refint\CoffeeLibrary.dll
+C:\Sandu\Uni\II\OOP\oop-course-repo\Task4\CoffeeLibrary\obj\Debug\net8.0\CoffeeLibrary.pdb
+C:\Sandu\Uni\II\OOP\oop-course-repo\Task4\CoffeeLibrary\obj\Debug\net8.0\ref\CoffeeLibrary.dll
