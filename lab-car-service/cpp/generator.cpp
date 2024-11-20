@@ -5,9 +5,8 @@
 #include <thread>
 #include <chrono>
 #include <filesystem>
-
-// TODO this is awful, should probably do something about it in the future.
-#include "../lab-papers-please/cpp-classification/include/nlohmann/json.hpp"
+#include <map>
+#include <nlohmann/json.hpp>
 
 using json = nlohmann::json;
 namespace fs = std::filesystem;
