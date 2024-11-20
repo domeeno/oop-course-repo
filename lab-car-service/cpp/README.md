@@ -1,4 +1,4 @@
-# CarLabs Generator
+# Generator - C++
 
 ## Prerequisites
 
@@ -81,7 +81,7 @@ Or simply run the build command again to rebuild only changed files.
 - C++17 compatible compiler
 - CMake 3.10 or higher
 
-## Troubleshooting
+## If you have any problems:
 
 ### Windows
 - If you get "'cmake' is not recognized", restart your terminal after installing CMake
