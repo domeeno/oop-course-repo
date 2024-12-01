@@ -1,58 +1,45 @@
 package oop.practice;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
-import java.util.Scanner;
 
 public class Main {
-  public static void main(String[] args) throws IOException {
-    ObjectMapper mapper = new ObjectMapper();
-    File inputFile = new File("src/main/resources/test-input.json");
-    JsonNode data = mapper.readTree(inputFile).get("data");
 
-    Universe starWars = new Universe("starWars", new ArrayList<>());
-    Universe hitchhikers = new Universe("hitchHiker", new ArrayList<>());
-    Universe marvel = new Universe("marvel", new ArrayList<>());
-    Universe rings = new Universe("rings", new ArrayList<>());
+    public static void main(String[] args) {
+        File folder = new File("/Users/viktorianicologlo/Downloads/oop-course-repo3/lab-car-service/queue");
+        File[] files = folder.listFiles((dir, name) -> name.endsWith(".json"));
 
-    Scanner scanner = new Scanner(System.in);
+        List<Car> carList = new ArrayList<>();
 
-    for (JsonNode entry : data) {
-      String entryAsString = entry.toString();
-      System.out.println(entryAsString);
-      String userInput = scanner.nextLine();
-      switch (userInput) {
-        case "1":
-          starWars.individuals().add(entry);
-          break;
-        case "2":
-          hitchhikers.individuals().add(entry);
-          break;
-        case "3":
-          marvel.individuals().add(entry);
-          break;
-        case "4":
-          rings.individuals().add(entry);
-          break;
-        default:
-          System.out.println("Invalid input");
-      }
+        if (files != null) {
+            for (File file : files) {
+                try {
+                    ObjectMapper objectMapper = new ObjectMapper();
+                    Car car = objectMapper.readValue(file, Car.class);
+                    carList.add(car);
+                    System.out.println("Loaded car from file: " + file.getName());
+                } catch (Exception e) {
+                    System.out.println("Error reading file " + file.getName() + ": " + e.getMessage());
+                }
+            }
+
+            CarStation carStation = new CarStation(new SimpleQueue(), new GasStation());
+            Semaphore semaphore = new Semaphore(carStation);
+
+            carList.sort(Comparator.comparingInt(Car::getId));
+            for (Car car : carList) {
+                System.out.println("Adding car " + car.getId() + " to the queue.");
+                semaphore.assignCarToStation(car);
+            }
+
+            Dineable peopleDinner = new PeopleDinner(new SimpleQueue());
+            Dineable robotDinner = new RobotDinner(new SimpleQueue());
+
+            carStation.serveCars(peopleDinner);
+            carStation.serveCars(robotDinner);
+        }
     }
-
-    scanner.close();
-    mapper.writeValue(new File("src/main/resources/output/starwars.json"), starWars);
-    mapper.writeValue(new File("src/main/resources/output/hitchhiker.json"), hitchhikers);
-    mapper.writeValue(new File("src/main/resources/output/rings.json"), rings);
-    mapper.writeValue(new File("src/main/resources/output/marvel.json"), marvel);
-  }
 }
-
-record Universe(
-    String name,
-    List<JsonNode> individuals
-) { }
