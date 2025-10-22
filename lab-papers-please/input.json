@@ -1,188 +1,1730 @@
-{
-  "input": [
-    {
-      "id": 0,
-      "isHumanoid": false,
-      "planet": "Kashyyyk",
-      "age": 253,
-      "traits": [
-        "HAIRY",
-        "TALL"
-      ]
-    },
-    {
-      "id": 1,
-      "isHumanoid": false,
-      "planet": "Endor",
-      "age": 34,
-      "traits": [
-        "HAIRY",
-        "SHORT"
-      ]
-    },
-    {
-      "id": 2,
-      "isHumanoid": true,
-      "planet": "Asgard",
-      "age": 2034,
-      "traits": [
-        "BLONDE",
-        "TALL"
-      ]
-    },
-    {
-      "id": 3,
-      "isHumanoid": true,
-      "planet": "Betelgeuse",
-      "age": 59,
-      "traits": [
-        "EXTRA_ARMS",
-        "EXTRA_HEAD"
-      ]
-    },
-    {
-      "id": 4,
-      "isHumanoid": false,
-      "planet": "Vogsphere",
-      "age": 128,
-      "traits": [
-        "GREEN",
-        "BULKY"
-      ]
-    },
-    {
-      "id": 5,
-      "isHumanoid": true,
-      "planet": "Earth",
-      "age": 451,
-      "traits": [
-        "BLONDE",
-        "POINTY_EARS"
-      ]
-    },
-    {
-      "id": 6,
-      "isHumanoid": true,
-      "planet": "Earth",
-      "age": 124,
-      "traits": [
-        "SHORT",
-        "BULKY"
-      ]
-    },
-    {
-      "id": 7,
-      "planet": "Kashyyyk",
-      "age": 352,
-      "traits": [
-        "HAIRY",
-        "TALL"
-      ]
-    },
-    {
-      "id": 8,
-      "isHumanoid": false,
-      "planet": "Endor",
-      "age": 22
-    },
-    {
-      "id": 9,
-      "isHumanoid": true,
-      "planet": "Asgard",
-      "traits": [
-        "BLONDE",
-        "TALL"
-      ]
-    },
-    {
-      "id": 10,
-      "planet": "Betelgeuse",
-      "age": 45,
-      "traits": [
-        "EXTRA_ARMS",
-        "EXTRA_HEAD"
-      ]
-    },
-    {
-      "id": 11,
-      "isHumanoid": false,
-      "age": 128,
-      "traits": [
-        "GREEN"
-      ]
-    },
-    {
-      "id": 12,
-      "isHumanoid": true,
-      "age": 7523
-    },
-    {
-      "id": 13,
-      "planet": "Earth",
-      "traits": [
-        "SHORT",
-        "BULKY"
-      ]
-    },
-    {
-      "id": 14,
-      "isHumanoid": false,
-      "age": 253,
-      "traits": [
-        "HAIRY",
-        "TALL"
-      ]
-    },
-    {
-      "id": 15,
-      "planet": "Endor"
-    },
-    {
-      "id": 16,
-      "isHumanoid": true,
-      "age": 154,
-      "traits": [
-        "BLONDE",
-        "TALL"
-      ]
-    },
-    {
-      "id": 17,
-      "age": 26,
-      "traits": [
-        "EXTRA_ARMS"
-      ]
-    },
-    {
-      "id": 18,
-      "isHumanoid": false,
-      "traits": [
-        "BULKY"
-      ]
-    },
-    {
-      "id": 19,
-      "isHumanoid": true,
-      "planet": "Earth",
-      "age": 451,
-      "traits": [
-        "BLONDE",
-        "TALL"
-      ]
-    },
-    {
-      "id": 20,
-      "isHumanoid": true,
-      "traits": [
-        "BULKY"
-      ]
-    },
-    {
-      "id": 21,
-      "age": 82,
-      "traits": [
-        "EXTRA_HEAD"
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": 0,
+    "isHumanoid": null,
+    "originPlanet": "EARTH",
+    "age": null,
+    "physicalTraits": [
+      "POINTY_EARS"
+    ]
+  },
+  {
+    "id": 1,
+    "isHumanoid": false,
+    "originPlanet": "KASHYYYK",
+    "age": 296,
+    "physicalTraits": null
+  },
+  {
+    "id": 2,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": null,
+    "physicalTraits": [
+      "BLONDE"
+    ]
+  },
+  {
+    "id": 3,
+    "isHumanoid": false,
+    "originPlanet": "KASHYYYK",
+    "age": null,
+    "physicalTraits": [
+      "HAIRY",
+      "TALL"
+    ]
+  },
+  {
+    "id": 4,
+    "isHumanoid": null,
+    "originPlanet": "EARTH",
+    "age": 17601,
+    "physicalTraits": null
+  },
+  {
+    "id": 5,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 5955,
+    "physicalTraits": null
+  },
+  {
+    "id": 6,
+    "isHumanoid": null,
+    "originPlanet": "VOGSPHERE",
+    "age": 144,
+    "physicalTraits": null
+  },
+  {
+    "id": 7,
+    "isHumanoid": null,
+    "originPlanet": "BETELGEUSE",
+    "age": 51,
+    "physicalTraits": null
+  },
+  {
+    "id": 8,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": 12775,
+    "physicalTraits": null
+  },
+  {
+    "id": 9,
+    "isHumanoid": true,
+    "originPlanet": "BETELGEUSE",
+    "age": 74,
+    "physicalTraits": [
+      "EXTRA_HEAD",
+      "EXTRA_ARMS"
+    ]
+  },
+  {
+    "id": 10,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": 105,
+    "physicalTraits": null
+  },
+  {
+    "id": 11,
+    "isHumanoid": null,
+    "originPlanet": "KASHYYYK",
+    "age": null,
+    "physicalTraits": [
+      "TALL",
+      "HAIRY"
+    ]
+  },
+  {
+    "id": 12,
+    "isHumanoid": false,
+    "originPlanet": "KASHYYYK",
+    "age": 311,
+    "physicalTraits": null
+  },
+  {
+    "id": 13,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": 96,
+    "physicalTraits": [
+      "BULKY",
+      "GREEN"
+    ]
+  },
+  {
+    "id": 14,
+    "isHumanoid": null,
+    "originPlanet": "VOGSPHERE",
+    "age": 106,
+    "physicalTraits": [
+      "GREEN",
+      "BULKY"
+    ]
+  },
+  {
+    "id": 15,
+    "isHumanoid": true,
+    "originPlanet": "ASGARD",
+    "age": 3566,
+    "physicalTraits": [
+      "BLONDE",
+      "TALL"
+    ]
+  },
+  {
+    "id": 16,
+    "isHumanoid": false,
+    "originPlanet": "ENDOR",
+    "age": null,
+    "physicalTraits": null
+  },
+  {
+    "id": 17,
+    "isHumanoid": null,
+    "originPlanet": "ASGARD",
+    "age": 3587,
+    "physicalTraits": null
+  },
+  {
+    "id": 18,
+    "isHumanoid": null,
+    "originPlanet": "EARTH",
+    "age": 10026,
+    "physicalTraits": [
+      "POINTY_EARS"
+    ]
+  },
+  {
+    "id": 19,
+    "isHumanoid": true,
+    "originPlanet": "BETELGEUSE",
+    "age": 77,
+    "physicalTraits": [
+      "EXTRA_ARMS"
+    ]
+  },
+  {
+    "id": 20,
+    "isHumanoid": true,
+    "originPlanet": "BETELGEUSE",
+    "age": null,
+    "physicalTraits": [
+      "EXTRA_ARMS"
+    ]
+  },
+  {
+    "id": 21,
+    "isHumanoid": true,
+    "originPlanet": "BETELGEUSE",
+    "age": 82,
+    "physicalTraits": [
+      "EXTRA_ARMS",
+      "EXTRA_HEAD"
+    ]
+  },
+  {
+    "id": 22,
+    "isHumanoid": true,
+    "originPlanet": "ASGARD",
+    "age": 2705,
+    "physicalTraits": [
+      "TALL",
+      "BLONDE"
+    ]
+  },
+  {
+    "id": 23,
+    "isHumanoid": null,
+    "originPlanet": "EARTH",
+    "age": 81,
+    "physicalTraits": null
+  },
+  {
+    "id": 24,
+    "isHumanoid": true,
+    "originPlanet": null,
+    "age": 12488,
+    "physicalTraits": null
+  },
+  {
+    "id": 25,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": null,
+    "physicalTraits": [
+      "SHORT",
+      "BULKY"
+    ]
+  },
+  {
+    "id": 26,
+    "isHumanoid": null,
+    "originPlanet": "KASHYYYK",
+    "age": null,
+    "physicalTraits": null
+  },
+  {
+    "id": 27,
+    "isHumanoid": true,
+    "originPlanet": null,
+    "age": 19272,
+    "physicalTraits": [
+      "POINTY_EARS"
+    ]
+  },
+  {
+    "id": 28,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 175,
+    "physicalTraits": null
+  },
+  {
+    "id": 29,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": 10461,
+    "physicalTraits": null
+  },
+  {
+    "id": 30,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": null,
+    "physicalTraits": [
+      "POINTY_EARS"
+    ]
+  },
+  {
+    "id": 31,
+    "isHumanoid": false,
+    "originPlanet": null,
+    "age": 33,
+    "physicalTraits": [
+      "HAIRY",
+      "SHORT"
+    ]
+  },
+  {
+    "id": 32,
+    "isHumanoid": null,
+    "originPlanet": "VOGSPHERE",
+    "age": 149,
+    "physicalTraits": [
+      "BULKY"
+    ]
+  },
+  {
+    "id": 33,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 134,
+    "physicalTraits": [
+      "SHORT"
+    ]
+  },
+  {
+    "id": 34,
+    "isHumanoid": true,
+    "originPlanet": "BETELGEUSE",
+    "age": 8,
+    "physicalTraits": [
+      "EXTRA_ARMS",
+      "EXTRA_HEAD"
+    ]
+  },
+  {
+    "id": 35,
+    "isHumanoid": null,
+    "originPlanet": "EARTH",
+    "age": 184,
+    "physicalTraits": [
+      "SHORT",
+      "BULKY"
+    ]
+  },
+  {
+    "id": 36,
+    "isHumanoid": true,
+    "originPlanet": null,
+    "age": null,
+    "physicalTraits": null
+  },
+  {
+    "id": 37,
+    "isHumanoid": true,
+    "originPlanet": "BETELGEUSE",
+    "age": null,
+    "physicalTraits": [
+      "EXTRA_HEAD"
+    ]
+  },
+  {
+    "id": 38,
+    "isHumanoid": true,
+    "originPlanet": "BETELGEUSE",
+    "age": 3,
+    "physicalTraits": null
+  },
+  {
+    "id": 39,
+    "isHumanoid": false,
+    "originPlanet": "KASHYYYK",
+    "age": 255,
+    "physicalTraits": [
+      "HAIRY"
+    ]
+  },
+  {
+    "id": 40,
+    "isHumanoid": false,
+    "originPlanet": "ENDOR",
+    "age": 17,
+    "physicalTraits": [
+      "HAIRY"
+    ]
+  },
+  {
+    "id": 41,
+    "isHumanoid": false,
+    "originPlanet": null,
+    "age": 3,
+    "physicalTraits": [
+      "SHORT",
+      "HAIRY"
+    ]
+  },
+  {
+    "id": 42,
+    "isHumanoid": false,
+    "originPlanet": null,
+    "age": 268,
+    "physicalTraits": [
+      "HAIRY",
+      "TALL"
+    ]
+  },
+  {
+    "id": 43,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": 107,
+    "physicalTraits": [
+      "SHORT"
+    ]
+  },
+  {
+    "id": 44,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": null,
+    "physicalTraits": null
+  },
+  {
+    "id": 45,
+    "isHumanoid": true,
+    "originPlanet": "ASGARD",
+    "age": 3731,
+    "physicalTraits": null
+  },
+  {
+    "id": 46,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": 9,
+    "physicalTraits": null
+  },
+  {
+    "id": 47,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 153,
+    "physicalTraits": [
+      "TALL"
+    ]
+  },
+  {
+    "id": 48,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": 6,
+    "physicalTraits": null
+  },
+  {
+    "id": 49,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 4,
+    "physicalTraits": [
+      "BULKY",
+      "SHORT"
+    ]
+  },
+  {
+    "id": 50,
+    "isHumanoid": false,
+    "originPlanet": "ENDOR",
+    "age": 53,
+    "physicalTraits": null
+  },
+  {
+    "id": 51,
+    "isHumanoid": true,
+    "originPlanet": "BETELGEUSE",
+    "age": 75,
+    "physicalTraits": null
+  },
+  {
+    "id": 52,
+    "isHumanoid": false,
+    "originPlanet": "KASHYYYK",
+    "age": 53,
+    "physicalTraits": [
+      "TALL",
+      "HAIRY"
+    ]
+  },
+  {
+    "id": 53,
+    "isHumanoid": null,
+    "originPlanet": "VOGSPHERE",
+    "age": null,
+    "physicalTraits": [
+      "GREEN",
+      "BULKY"
+    ]
+  },
+  {
+    "id": 54,
+    "isHumanoid": null,
+    "originPlanet": "VOGSPHERE",
+    "age": 10,
+    "physicalTraits": [
+      "GREEN",
+      "BULKY"
+    ]
+  },
+  {
+    "id": 55,
+    "isHumanoid": true,
+    "originPlanet": "ASGARD",
+    "age": null,
+    "physicalTraits": [
+      "BLONDE",
+      "TALL"
+    ]
+  },
+  {
+    "id": 56,
+    "isHumanoid": true,
+    "originPlanet": "ASGARD",
+    "age": null,
+    "physicalTraits": [
+      "BLONDE"
+    ]
+  },
+  {
+    "id": 57,
+    "isHumanoid": null,
+    "originPlanet": "ASGARD",
+    "age": null,
+    "physicalTraits": [
+      "TALL"
+    ]
+  },
+  {
+    "id": 58,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 18934,
+    "physicalTraits": [
+      "BLONDE"
+    ]
+  },
+  {
+    "id": 59,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": 118,
+    "physicalTraits": [
+      "SHORT"
+    ]
+  },
+  {
+    "id": 60,
+    "isHumanoid": true,
+    "originPlanet": null,
+    "age": null,
+    "physicalTraits": null
+  },
+  {
+    "id": 61,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 2954,
+    "physicalTraits": [
+      "BLONDE",
+      "TALL"
+    ]
+  },
+  {
+    "id": 62,
+    "isHumanoid": null,
+    "originPlanet": "EARTH",
+    "age": null,
+    "physicalTraits": [
+      "POINTY_EARS"
+    ]
+  },
+  {
+    "id": 63,
+    "isHumanoid": false,
+    "originPlanet": "ENDOR",
+    "age": 3,
+    "physicalTraits": [
+      "HAIRY",
+      "SHORT"
+    ]
+  },
+  {
+    "id": 64,
+    "isHumanoid": null,
+    "originPlanet": "ASGARD",
+    "age": null,
+    "physicalTraits": [
+      "BLONDE"
+    ]
+  },
+  {
+    "id": 65,
+    "isHumanoid": true,
+    "originPlanet": null,
+    "age": 30,
+    "physicalTraits": [
+      "EXTRA_ARMS"
+    ]
+  },
+  {
+    "id": 66,
+    "isHumanoid": null,
+    "originPlanet": "EARTH",
+    "age": null,
+    "physicalTraits": [
+      "SHORT"
+    ]
+  },
+  {
+    "id": 67,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": null,
+    "physicalTraits": [
+      "GREEN",
+      "BULKY"
+    ]
+  },
+  {
+    "id": 68,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": 145,
+    "physicalTraits": null
+  },
+  {
+    "id": 69,
+    "isHumanoid": null,
+    "originPlanet": "VOGSPHERE",
+    "age": 25,
+    "physicalTraits": null
+  },
+  {
+    "id": 70,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": 148,
+    "physicalTraits": [
+      "SHORT",
+      "BULKY"
+    ]
+  },
+  {
+    "id": 71,
+    "isHumanoid": true,
+    "originPlanet": null,
+    "age": 3711,
+    "physicalTraits": [
+      "BLONDE",
+      "TALL"
+    ]
+  },
+  {
+    "id": 72,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": 124,
+    "physicalTraits": [
+      "BULKY"
+    ]
+  },
+  {
+    "id": 73,
+    "isHumanoid": null,
+    "originPlanet": "VOGSPHERE",
+    "age": 4,
+    "physicalTraits": [
+      "GREEN"
+    ]
+  },
+  {
+    "id": 74,
+    "isHumanoid": true,
+    "originPlanet": "ASGARD",
+    "age": null,
+    "physicalTraits": [
+      "BLONDE",
+      "TALL"
+    ]
+  },
+  {
+    "id": 75,
+    "isHumanoid": false,
+    "originPlanet": "KASHYYYK",
+    "age": 375,
+    "physicalTraits": [
+      "HAIRY",
+      "TALL"
+    ]
+  },
+  {
+    "id": 76,
+    "isHumanoid": null,
+    "originPlanet": "ENDOR",
+    "age": null,
+    "physicalTraits": [
+      "HAIRY",
+      "SHORT"
+    ]
+  },
+  {
+    "id": 77,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": null,
+    "physicalTraits": [
+      "BULKY",
+      "GREEN"
+    ]
+  },
+  {
+    "id": 78,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 6094,
+    "physicalTraits": null
+  },
+  {
+    "id": 79,
+    "isHumanoid": false,
+    "originPlanet": "ENDOR",
+    "age": null,
+    "physicalTraits": [
+      "HAIRY"
+    ]
+  },
+  {
+    "id": 80,
+    "isHumanoid": false,
+    "originPlanet": "KASHYYYK",
+    "age": 101,
+    "physicalTraits": null
+  },
+  {
+    "id": 81,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": 1112,
+    "physicalTraits": [
+      "BLONDE",
+      "POINTY_EARS"
+    ]
+  },
+  {
+    "id": 82,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 10791,
+    "physicalTraits": [
+      "POINTY_EARS"
+    ]
+  },
+  {
+    "id": 83,
+    "isHumanoid": true,
+    "originPlanet": null,
+    "age": 88,
+    "physicalTraits": [
+      "EXTRA_ARMS",
+      "EXTRA_HEAD"
+    ]
+  },
+  {
+    "id": 84,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": null,
+    "physicalTraits": [
+      "SHORT",
+      "BULKY"
+    ]
+  },
+  {
+    "id": 85,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": 167,
+    "physicalTraits": [
+      "BULKY",
+      "GREEN"
+    ]
+  },
+  {
+    "id": 86,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": null,
+    "physicalTraits": null
+  },
+  {
+    "id": 87,
+    "isHumanoid": null,
+    "originPlanet": "ENDOR",
+    "age": 14,
+    "physicalTraits": [
+      "HAIRY"
+    ]
+  },
+  {
+    "id": 88,
+    "isHumanoid": null,
+    "originPlanet": "ENDOR",
+    "age": 58,
+    "physicalTraits": null
+  },
+  {
+    "id": 89,
+    "isHumanoid": false,
+    "originPlanet": null,
+    "age": 17,
+    "physicalTraits": [
+      "HAIRY"
+    ]
+  },
+  {
+    "id": 90,
+    "isHumanoid": true,
+    "originPlanet": "ASGARD",
+    "age": 3526,
+    "physicalTraits": [
+      "TALL"
+    ]
+  },
+  {
+    "id": 91,
+    "isHumanoid": null,
+    "originPlanet": "VOGSPHERE",
+    "age": 131,
+    "physicalTraits": null
+  },
+  {
+    "id": 92,
+    "isHumanoid": null,
+    "originPlanet": "ENDOR",
+    "age": 60,
+    "physicalTraits": [
+      "HAIRY"
+    ]
+  },
+  {
+    "id": 93,
+    "isHumanoid": null,
+    "originPlanet": "EARTH",
+    "age": 9719,
+    "physicalTraits": null
+  },
+  {
+    "id": 94,
+    "isHumanoid": false,
+    "originPlanet": "ENDOR",
+    "age": null,
+    "physicalTraits": null
+  },
+  {
+    "id": 95,
+    "isHumanoid": true,
+    "originPlanet": "ASGARD",
+    "age": 2340,
+    "physicalTraits": [
+      "TALL"
+    ]
+  },
+  {
+    "id": 96,
+    "isHumanoid": null,
+    "originPlanet": "EARTH",
+    "age": null,
+    "physicalTraits": [
+      "BULKY"
+    ]
+  },
+  {
+    "id": 97,
+    "isHumanoid": false,
+    "originPlanet": null,
+    "age": 285,
+    "physicalTraits": [
+      "TALL",
+      "HAIRY"
+    ]
+  },
+  {
+    "id": 98,
+    "isHumanoid": null,
+    "originPlanet": "VOGSPHERE",
+    "age": 54,
+    "physicalTraits": null
+  },
+  {
+    "id": 99,
+    "isHumanoid": false,
+    "originPlanet": "ENDOR",
+    "age": 1,
+    "physicalTraits": [
+      "SHORT",
+      "HAIRY"
+    ]
+  },
+  {
+    "id": 100,
+    "isHumanoid": false,
+    "originPlanet": "ENDOR",
+    "age": 4,
+    "physicalTraits": [
+      "SHORT",
+      "HAIRY"
+    ]
+  },
+  {
+    "id": 101,
+    "isHumanoid": false,
+    "originPlanet": null,
+    "age": 50,
+    "physicalTraits": [
+      "HAIRY"
+    ]
+  },
+  {
+    "id": 102,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 29,
+    "physicalTraits": null
+  },
+  {
+    "id": 103,
+    "isHumanoid": true,
+    "originPlanet": "ASGARD",
+    "age": 1446,
+    "physicalTraits": null
+  },
+  {
+    "id": 104,
+    "isHumanoid": false,
+    "originPlanet": null,
+    "age": 64,
+    "physicalTraits": [
+      "GREEN"
+    ]
+  },
+  {
+    "id": 105,
+    "isHumanoid": false,
+    "originPlanet": "KASHYYYK",
+    "age": 259,
+    "physicalTraits": null
+  },
+  {
+    "id": 106,
+    "isHumanoid": null,
+    "originPlanet": "ASGARD",
+    "age": null,
+    "physicalTraits": [
+      "BLONDE"
+    ]
+  },
+  {
+    "id": 107,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": 124,
+    "physicalTraits": null
+  },
+  {
+    "id": 108,
+    "isHumanoid": false,
+    "originPlanet": "KASHYYYK",
+    "age": null,
+    "physicalTraits": [
+      "HAIRY"
+    ]
+  },
+  {
+    "id": 109,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": 23,
+    "physicalTraits": [
+      "BULKY",
+      "SHORT"
+    ]
+  },
+  {
+    "id": 110,
+    "isHumanoid": null,
+    "originPlanet": "EARTH",
+    "age": 178,
+    "physicalTraits": [
+      "SHORT"
+    ]
+  },
+  {
+    "id": 111,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 82,
+    "physicalTraits": null
+  },
+  {
+    "id": 112,
+    "isHumanoid": true,
+    "originPlanet": "ASGARD",
+    "age": null,
+    "physicalTraits": null
+  },
+  {
+    "id": 113,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 14,
+    "physicalTraits": null
+  },
+  {
+    "id": 114,
+    "isHumanoid": true,
+    "originPlanet": null,
+    "age": null,
+    "physicalTraits": [
+      "BULKY",
+      "SHORT"
+    ]
+  },
+  {
+    "id": 115,
+    "isHumanoid": null,
+    "originPlanet": "BETELGEUSE",
+    "age": null,
+    "physicalTraits": [
+      "EXTRA_HEAD",
+      "EXTRA_ARMS"
+    ]
+  },
+  {
+    "id": 116,
+    "isHumanoid": true,
+    "originPlanet": "BETELGEUSE",
+    "age": 97,
+    "physicalTraits": null
+  },
+  {
+    "id": 117,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": 35,
+    "physicalTraits": [
+      "BULKY",
+      "SHORT"
+    ]
+  },
+  {
+    "id": 118,
+    "isHumanoid": null,
+    "originPlanet": "VOGSPHERE",
+    "age": 2,
+    "physicalTraits": [
+      "BULKY",
+      "GREEN"
+    ]
+  },
+  {
+    "id": 119,
+    "isHumanoid": true,
+    "originPlanet": "BETELGEUSE",
+    "age": null,
+    "physicalTraits": [
+      "EXTRA_ARMS"
+    ]
+  },
+  {
+    "id": 120,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": null,
+    "physicalTraits": [
+      "BULKY"
+    ]
+  },
+  {
+    "id": 121,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": null,
+    "physicalTraits": null
+  },
+  {
+    "id": 122,
+    "isHumanoid": false,
+    "originPlanet": "KASHYYYK",
+    "age": 80,
+    "physicalTraits": [
+      "TALL"
+    ]
+  },
+  {
+    "id": 123,
+    "isHumanoid": null,
+    "originPlanet": "EARTH",
+    "age": 42,
+    "physicalTraits": [
+      "BULKY",
+      "SHORT"
+    ]
+  },
+  {
+    "id": 124,
+    "isHumanoid": true,
+    "originPlanet": "ASGARD",
+    "age": 4869,
+    "physicalTraits": [
+      "BLONDE",
+      "TALL"
+    ]
+  },
+  {
+    "id": 125,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": 187,
+    "physicalTraits": [
+      "BULKY",
+      "GREEN"
+    ]
+  },
+  {
+    "id": 126,
+    "isHumanoid": false,
+    "originPlanet": "ENDOR",
+    "age": 60,
+    "physicalTraits": [
+      "SHORT"
+    ]
+  },
+  {
+    "id": 127,
+    "isHumanoid": true,
+    "originPlanet": "BETELGEUSE",
+    "age": null,
+    "physicalTraits": [
+      "EXTRA_ARMS",
+      "EXTRA_HEAD"
+    ]
+  },
+  {
+    "id": 128,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": null,
+    "physicalTraits": null
+  },
+  {
+    "id": 129,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": 6606,
+    "physicalTraits": [
+      "BLONDE",
+      "POINTY_EARS"
+    ]
+  },
+  {
+    "id": 130,
+    "isHumanoid": true,
+    "originPlanet": null,
+    "age": 1463,
+    "physicalTraits": null
+  },
+  {
+    "id": 131,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": 28,
+    "physicalTraits": [
+      "GREEN",
+      "BULKY"
+    ]
+  },
+  {
+    "id": 132,
+    "isHumanoid": false,
+    "originPlanet": "KASHYYYK",
+    "age": 29,
+    "physicalTraits": [
+      "HAIRY",
+      "TALL"
+    ]
+  },
+  {
+    "id": 133,
+    "isHumanoid": false,
+    "originPlanet": null,
+    "age": 153,
+    "physicalTraits": [
+      "BULKY",
+      "GREEN"
+    ]
+  },
+  {
+    "id": 134,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": 14388,
+    "physicalTraits": [
+      "BLONDE",
+      "POINTY_EARS"
+    ]
+  },
+  {
+    "id": 135,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": 190,
+    "physicalTraits": [
+      "BULKY"
+    ]
+  },
+  {
+    "id": 136,
+    "isHumanoid": true,
+    "originPlanet": null,
+    "age": 10980,
+    "physicalTraits": [
+      "POINTY_EARS",
+      "BLONDE"
+    ]
+  },
+  {
+    "id": 137,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": 7128,
+    "physicalTraits": null
+  },
+  {
+    "id": 138,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": 170,
+    "physicalTraits": null
+  },
+  {
+    "id": 139,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 183,
+    "physicalTraits": null
+  },
+  {
+    "id": 140,
+    "isHumanoid": true,
+    "originPlanet": "ASGARD",
+    "age": 4297,
+    "physicalTraits": null
+  },
+  {
+    "id": 141,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": 78,
+    "physicalTraits": null
+  },
+  {
+    "id": 142,
+    "isHumanoid": true,
+    "originPlanet": null,
+    "age": 114,
+    "physicalTraits": null
+  },
+  {
+    "id": 143,
+    "isHumanoid": false,
+    "originPlanet": "ENDOR",
+    "age": null,
+    "physicalTraits": [
+      "SHORT",
+      "HAIRY"
+    ]
+  },
+  {
+    "id": 144,
+    "isHumanoid": true,
+    "originPlanet": "BETELGEUSE",
+    "age": 38,
+    "physicalTraits": null
+  },
+  {
+    "id": 145,
+    "isHumanoid": true,
+    "originPlanet": null,
+    "age": 89,
+    "physicalTraits": [
+      "EXTRA_HEAD"
+    ]
+  },
+  {
+    "id": 146,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 169,
+    "physicalTraits": [
+      "SHORT",
+      "BULKY"
+    ]
+  },
+  {
+    "id": 147,
+    "isHumanoid": true,
+    "originPlanet": null,
+    "age": null,
+    "physicalTraits": null
+  },
+  {
+    "id": 148,
+    "isHumanoid": true,
+    "originPlanet": null,
+    "age": 265,
+    "physicalTraits": [
+      "BLONDE"
+    ]
+  },
+  {
+    "id": 149,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 43,
+    "physicalTraits": [
+      "SHORT"
+    ]
+  },
+  {
+    "id": 150,
+    "isHumanoid": true,
+    "originPlanet": "BETELGEUSE",
+    "age": 46,
+    "physicalTraits": [
+      "EXTRA_ARMS"
+    ]
+  },
+  {
+    "id": 151,
+    "isHumanoid": null,
+    "originPlanet": "EARTH",
+    "age": null,
+    "physicalTraits": null
+  },
+  {
+    "id": 152,
+    "isHumanoid": null,
+    "originPlanet": "BETELGEUSE",
+    "age": 19,
+    "physicalTraits": [
+      "EXTRA_HEAD",
+      "EXTRA_ARMS"
+    ]
+  },
+  {
+    "id": 153,
+    "isHumanoid": true,
+    "originPlanet": null,
+    "age": 3701,
+    "physicalTraits": null
+  },
+  {
+    "id": 154,
+    "isHumanoid": true,
+    "originPlanet": "BETELGEUSE",
+    "age": 98,
+    "physicalTraits": null
+  },
+  {
+    "id": 155,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": 18957,
+    "physicalTraits": [
+      "POINTY_EARS",
+      "BLONDE"
+    ]
+  },
+  {
+    "id": 156,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": 72,
+    "physicalTraits": [
+      "GREEN"
+    ]
+  },
+  {
+    "id": 157,
+    "isHumanoid": true,
+    "originPlanet": "BETELGEUSE",
+    "age": 73,
+    "physicalTraits": [
+      "EXTRA_ARMS",
+      "EXTRA_HEAD"
+    ]
+  },
+  {
+    "id": 158,
+    "isHumanoid": false,
+    "originPlanet": null,
+    "age": 265,
+    "physicalTraits": [
+      "HAIRY",
+      "TALL"
+    ]
+  },
+  {
+    "id": 159,
+    "isHumanoid": null,
+    "originPlanet": "ASGARD",
+    "age": null,
+    "physicalTraits": null
+  },
+  {
+    "id": 160,
+    "isHumanoid": true,
+    "originPlanet": "ASGARD",
+    "age": 1134,
+    "physicalTraits": [
+      "TALL",
+      "BLONDE"
+    ]
+  },
+  {
+    "id": 161,
+    "isHumanoid": false,
+    "originPlanet": "ENDOR",
+    "age": 58,
+    "physicalTraits": null
+  },
+  {
+    "id": 162,
+    "isHumanoid": false,
+    "originPlanet": null,
+    "age": 188,
+    "physicalTraits": [
+      "TALL"
+    ]
+  },
+  {
+    "id": 163,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": 13035,
+    "physicalTraits": null
+  },
+  {
+    "id": 164,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 3783,
+    "physicalTraits": [
+      "TALL",
+      "BLONDE"
+    ]
+  },
+  {
+    "id": 165,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": null,
+    "physicalTraits": [
+      "GREEN",
+      "BULKY"
+    ]
+  },
+  {
+    "id": 166,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": 14694,
+    "physicalTraits": null
+  },
+  {
+    "id": 167,
+    "isHumanoid": true,
+    "originPlanet": "BETELGEUSE",
+    "age": 6,
+    "physicalTraits": [
+      "EXTRA_ARMS"
+    ]
+  },
+  {
+    "id": 168,
+    "isHumanoid": false,
+    "originPlanet": null,
+    "age": null,
+    "physicalTraits": null
+  },
+  {
+    "id": 169,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": 58,
+    "physicalTraits": [
+      "BULKY",
+      "GREEN"
+    ]
+  },
+  {
+    "id": 170,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": null,
+    "physicalTraits": null
+  },
+  {
+    "id": 171,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": null,
+    "physicalTraits": [
+      "BULKY"
+    ]
+  },
+  {
+    "id": 172,
+    "isHumanoid": null,
+    "originPlanet": "BETELGEUSE",
+    "age": 20,
+    "physicalTraits": null
+  },
+  {
+    "id": 173,
+    "isHumanoid": true,
+    "originPlanet": "ASGARD",
+    "age": 1732,
+    "physicalTraits": [
+      "TALL",
+      "BLONDE"
+    ]
+  },
+  {
+    "id": 174,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": 200,
+    "physicalTraits": null
+  },
+  {
+    "id": 175,
+    "isHumanoid": false,
+    "originPlanet": null,
+    "age": 17,
+    "physicalTraits": [
+      "HAIRY"
+    ]
+  },
+  {
+    "id": 176,
+    "isHumanoid": true,
+    "originPlanet": "ASGARD",
+    "age": 289,
+    "physicalTraits": [
+      "TALL",
+      "BLONDE"
+    ]
+  },
+  {
+    "id": 177,
+    "isHumanoid": false,
+    "originPlanet": "KASHYYYK",
+    "age": 217,
+    "physicalTraits": [
+      "HAIRY",
+      "TALL"
+    ]
+  },
+  {
+    "id": 178,
+    "isHumanoid": null,
+    "originPlanet": "BETELGEUSE",
+    "age": null,
+    "physicalTraits": null
+  },
+  {
+    "id": 179,
+    "isHumanoid": null,
+    "originPlanet": "BETELGEUSE",
+    "age": null,
+    "physicalTraits": [
+      "EXTRA_HEAD"
+    ]
+  },
+  {
+    "id": 180,
+    "isHumanoid": false,
+    "originPlanet": "ENDOR",
+    "age": 31,
+    "physicalTraits": [
+      "SHORT"
+    ]
+  },
+  {
+    "id": 181,
+    "isHumanoid": null,
+    "originPlanet": "EARTH",
+    "age": null,
+    "physicalTraits": [
+      "POINTY_EARS",
+      "BLONDE"
+    ]
+  },
+  {
+    "id": 182,
+    "isHumanoid": false,
+    "originPlanet": "ENDOR",
+    "age": null,
+    "physicalTraits": [
+      "SHORT"
+    ]
+  },
+  {
+    "id": 183,
+    "isHumanoid": false,
+    "originPlanet": "KASHYYYK",
+    "age": 354,
+    "physicalTraits": [
+      "HAIRY",
+      "TALL"
+    ]
+  },
+  {
+    "id": 184,
+    "isHumanoid": true,
+    "originPlanet": null,
+    "age": 64,
+    "physicalTraits": [
+      "SHORT"
+    ]
+  },
+  {
+    "id": 185,
+    "isHumanoid": null,
+    "originPlanet": "ENDOR",
+    "age": null,
+    "physicalTraits": [
+      "SHORT"
+    ]
+  },
+  {
+    "id": 186,
+    "isHumanoid": false,
+    "originPlanet": "ENDOR",
+    "age": 18,
+    "physicalTraits": null
+  },
+  {
+    "id": 187,
+    "isHumanoid": null,
+    "originPlanet": "EARTH",
+    "age": null,
+    "physicalTraits": [
+      "BLONDE",
+      "POINTY_EARS"
+    ]
+  },
+  {
+    "id": 188,
+    "isHumanoid": false,
+    "originPlanet": "VOGSPHERE",
+    "age": 114,
+    "physicalTraits": null
+  },
+  {
+    "id": 189,
+    "isHumanoid": true,
+    "originPlanet": null,
+    "age": 4438,
+    "physicalTraits": [
+      "BLONDE"
+    ]
+  },
+  {
+    "id": 190,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 4555,
+    "physicalTraits": [
+      "BLONDE",
+      "POINTY_EARS"
+    ]
+  },
+  {
+    "id": 191,
+    "isHumanoid": null,
+    "originPlanet": "ENDOR",
+    "age": 53,
+    "physicalTraits": [
+      "HAIRY",
+      "SHORT"
+    ]
+  },
+  {
+    "id": 192,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": 14463,
+    "physicalTraits": null
+  },
+  {
+    "id": 193,
+    "isHumanoid": false,
+    "originPlanet": "KASHYYYK",
+    "age": 86,
+    "physicalTraits": [
+      "HAIRY"
+    ]
+  },
+  {
+    "id": 194,
+    "isHumanoid": true,
+    "originPlanet": "ASGARD",
+    "age": 1123,
+    "physicalTraits": null
+  },
+  {
+    "id": 195,
+    "isHumanoid": false,
+    "originPlanet": "KASHYYYK",
+    "age": 270,
+    "physicalTraits": null
+  },
+  {
+    "id": 196,
+    "isHumanoid": null,
+    "originPlanet": "BETELGEUSE",
+    "age": 43,
+    "physicalTraits": null
+  },
+  {
+    "id": 197,
+    "isHumanoid": true,
+    "originPlanet": "EARTH",
+    "age": 13,
+    "physicalTraits": [
+      "SHORT",
+      "BULKY"
+    ]
+  },
+  {
+    "id": 198,
+    "isHumanoid": null,
+    "originPlanet": "BETELGEUSE",
+    "age": 63,
+    "physicalTraits": [
+      "EXTRA_HEAD"
+    ]
+  },
+  {
+    "id": 199,
+    "isHumanoid": null,
+    "originPlanet": null,
+    "age": 26,
+    "physicalTraits": [
+      "GREEN",
+      "BULKY"
+    ]
+  }
+]
