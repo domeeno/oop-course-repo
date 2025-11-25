@@ -42,6 +42,5 @@ g++ generator.cpp -o generator.out
 
 # Run or double click to run the program.
 ./generator.out
-
 ```
 
