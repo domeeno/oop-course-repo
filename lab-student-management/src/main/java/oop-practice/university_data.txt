@@ -1,0 +1,5 @@
+# University Management System Data File
+# Format: FACULTY|name|abbreviation|studyField
+# Format: STUDENT|firstName|lastName|email|enrollmentDate|dateOfBirth|graduated
+# ============================================
+FACULTY|filiera anglofona|faf|SOFTWARE_ENGINEERING

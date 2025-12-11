@@ -1,3 +1,4 @@
 /lab-car-service/cpp/build
 /lab-car-service/cpp/queue
 **/.idea/
+out/

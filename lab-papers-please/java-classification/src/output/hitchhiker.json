@@ -1,0 +1,438 @@
+{
+  "name" : "hitchhiker",
+  "individuals" : [ {
+    "id" : 6,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 144,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 7,
+    "originPlanet" : "BETELGEUSE",
+    "age" : 51,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 9,
+    "originPlanet" : "BETELGEUSE",
+    "age" : 74,
+    "physicalTraits" : [ "EXTRA_HEAD", "EXTRA_ARMS" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 10,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 105,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 13,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 96,
+    "physicalTraits" : [ "BULKY", "GREEN" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 14,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 106,
+    "physicalTraits" : [ "GREEN", "BULKY" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 19,
+    "originPlanet" : "BETELGEUSE",
+    "age" : 77,
+    "physicalTraits" : [ "EXTRA_ARMS" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 20,
+    "originPlanet" : "BETELGEUSE",
+    "age" : null,
+    "physicalTraits" : [ "EXTRA_ARMS" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 21,
+    "originPlanet" : "BETELGEUSE",
+    "age" : 82,
+    "physicalTraits" : [ "EXTRA_ARMS", "EXTRA_HEAD" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 32,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 149,
+    "physicalTraits" : [ "BULKY" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 34,
+    "originPlanet" : "BETELGEUSE",
+    "age" : 8,
+    "physicalTraits" : [ "EXTRA_ARMS", "EXTRA_HEAD" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 37,
+    "originPlanet" : "BETELGEUSE",
+    "age" : null,
+    "physicalTraits" : [ "EXTRA_HEAD" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 38,
+    "originPlanet" : "BETELGEUSE",
+    "age" : 3,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 46,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 9,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 48,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 6,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 51,
+    "originPlanet" : "BETELGEUSE",
+    "age" : 75,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 53,
+    "originPlanet" : "VOGSPHERE",
+    "age" : null,
+    "physicalTraits" : [ "GREEN", "BULKY" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 54,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 10,
+    "physicalTraits" : [ "GREEN", "BULKY" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 65,
+    "originPlanet" : null,
+    "age" : 30,
+    "physicalTraits" : [ "EXTRA_ARMS" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 67,
+    "originPlanet" : "VOGSPHERE",
+    "age" : null,
+    "physicalTraits" : [ "GREEN", "BULKY" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 68,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 145,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 69,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 25,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 73,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 4,
+    "physicalTraits" : [ "GREEN" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 77,
+    "originPlanet" : "VOGSPHERE",
+    "age" : null,
+    "physicalTraits" : [ "BULKY", "GREEN" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 83,
+    "originPlanet" : null,
+    "age" : 88,
+    "physicalTraits" : [ "EXTRA_ARMS", "EXTRA_HEAD" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 85,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 167,
+    "physicalTraits" : [ "BULKY", "GREEN" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 91,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 131,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 98,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 54,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 104,
+    "originPlanet" : null,
+    "age" : 64,
+    "physicalTraits" : [ "GREEN" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 107,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 124,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 115,
+    "originPlanet" : "BETELGEUSE",
+    "age" : null,
+    "physicalTraits" : [ "EXTRA_HEAD", "EXTRA_ARMS" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 116,
+    "originPlanet" : "BETELGEUSE",
+    "age" : 97,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 118,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 2,
+    "physicalTraits" : [ "BULKY", "GREEN" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 119,
+    "originPlanet" : "BETELGEUSE",
+    "age" : null,
+    "physicalTraits" : [ "EXTRA_ARMS" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 121,
+    "originPlanet" : "VOGSPHERE",
+    "age" : null,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 125,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 187,
+    "physicalTraits" : [ "BULKY", "GREEN" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 127,
+    "originPlanet" : "BETELGEUSE",
+    "age" : null,
+    "physicalTraits" : [ "EXTRA_ARMS", "EXTRA_HEAD" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 131,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 28,
+    "physicalTraits" : [ "GREEN", "BULKY" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 133,
+    "originPlanet" : null,
+    "age" : 153,
+    "physicalTraits" : [ "BULKY", "GREEN" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 135,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 190,
+    "physicalTraits" : [ "BULKY" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 138,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 170,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 141,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 78,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 144,
+    "originPlanet" : "BETELGEUSE",
+    "age" : 38,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 145,
+    "originPlanet" : null,
+    "age" : 89,
+    "physicalTraits" : [ "EXTRA_HEAD" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 150,
+    "originPlanet" : "BETELGEUSE",
+    "age" : 46,
+    "physicalTraits" : [ "EXTRA_ARMS" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 152,
+    "originPlanet" : "BETELGEUSE",
+    "age" : 19,
+    "physicalTraits" : [ "EXTRA_HEAD", "EXTRA_ARMS" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 154,
+    "originPlanet" : "BETELGEUSE",
+    "age" : 98,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 156,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 72,
+    "physicalTraits" : [ "GREEN" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 157,
+    "originPlanet" : "BETELGEUSE",
+    "age" : 73,
+    "physicalTraits" : [ "EXTRA_ARMS", "EXTRA_HEAD" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 165,
+    "originPlanet" : null,
+    "age" : null,
+    "physicalTraits" : [ "GREEN", "BULKY" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 167,
+    "originPlanet" : "BETELGEUSE",
+    "age" : 6,
+    "physicalTraits" : [ "EXTRA_ARMS" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : true
+  }, {
+    "id" : 169,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 58,
+    "physicalTraits" : [ "BULKY", "GREEN" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 170,
+    "originPlanet" : "VOGSPHERE",
+    "age" : null,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 171,
+    "originPlanet" : "VOGSPHERE",
+    "age" : null,
+    "physicalTraits" : [ "BULKY" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 172,
+    "originPlanet" : "BETELGEUSE",
+    "age" : 20,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 174,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 200,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 178,
+    "originPlanet" : "BETELGEUSE",
+    "age" : null,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 179,
+    "originPlanet" : "BETELGEUSE",
+    "age" : null,
+    "physicalTraits" : [ "EXTRA_HEAD" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 188,
+    "originPlanet" : "VOGSPHERE",
+    "age" : 114,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : false
+  }, {
+    "id" : 196,
+    "originPlanet" : "BETELGEUSE",
+    "age" : 43,
+    "physicalTraits" : null,
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 198,
+    "originPlanet" : "BETELGEUSE",
+    "age" : 63,
+    "physicalTraits" : [ "EXTRA_HEAD" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  }, {
+    "id" : 199,
+    "originPlanet" : null,
+    "age" : 26,
+    "physicalTraits" : [ "GREEN", "BULKY" ],
+    "universe" : "HITCHHIKER",
+    "humanoid" : null
+  } ]
+}
